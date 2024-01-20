@@ -46,5 +46,12 @@ npm install
 ```
 npm run build
 ```
-
+4. Run dev to start app
+```
+npm run dev
+```
+5. Access local page
+```
+http://localhost:5173/
+```
 
