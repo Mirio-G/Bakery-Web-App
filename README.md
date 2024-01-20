@@ -31,6 +31,9 @@ export default {
 =======
 # Bakery-Web-App
 ### Installation
+
+From teriminal or powershell
+
 1. clone from git to your dirctory
 ```
 gh repo clone Mirio-G/Bakery-Web-App
