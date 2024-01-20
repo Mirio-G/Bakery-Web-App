@@ -30,6 +30,18 @@ export default {
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
 =======
 # Bakery-Web-App
-Build with
+### Installation
+1. clone from git to your dirctory
+```
+gh repo clone Mirio-G/Bakery-Web-App
+```
+2. install dependencies
+```
+npm install
+```
+3. Run build 
+```
+npm run build
+```
 
 
