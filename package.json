@@ -2,7 +2,7 @@
   "name": "bakery-app",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -20,11 +20,18 @@
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react": "^4.2.1",
+    "bootstrap": "^5.3.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.2",
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
+    "express": "^4.18.2",
     "gh-pages": "^6.1.1",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.1.0",
+    "react-router-dom": "^6.21.3",
     "typescript": "^5.2.2",
-    "vite": "^5.0.8"
+    "vite": "^5.0.12"
   }
 }
