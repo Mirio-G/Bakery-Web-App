@@ -4,10 +4,10 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
  // We import all the components we need in our app
-import Navbar from "./components/navbar";
-import RecordList from "./components/recordList";
-import Edit from "./components/edit";
-import Create from "./components/create";
+import Navbar from "./components/navbar.tsx";
+import RecordList from "./components/recordList.tsx";
+import Edit from "./components/edit.tsx";
+import Create from "./components/create.tsx";
 
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
@@ -42,9 +42,7 @@ function App() {
 
       <Navbar />
 
-      <Routes>
-
-      </Routes>
+      <RecordList />
     </>
   )
 }
