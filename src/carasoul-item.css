@@ -1,0 +1,16 @@
+.carasoul-container{
+    background:#f1f1f1;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.carasoul-item{
+    height: 20rem;;
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    transition: ls cubic-bezier(0.39,0.575,0.565,1);
+}
