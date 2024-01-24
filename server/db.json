@@ -1,0 +1,39 @@
+{
+    "name": [
+        {"type" : "House Milk Tea",
+            "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
+            "size": ["small", "medium", "large"],
+            "description": "House Milk tea"
+        },
+        {"type" : "Jasmine Milk Tea",
+            "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
+            "size" : ["small", "medium", "large"],
+            "description" : ""
+        },
+        {"type" : "Caramel Milk Tea",
+            "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
+            "size" : ["small", "medium", "large"],
+            "description" : ""
+        },
+        {"type" : "Taro Milk Tea",
+            "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
+            "size" : ["small", "medium", "large"],
+            "description" : ""
+        },
+        {"type" : "Thai Milk Tea",
+            "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
+            "size" : ["small", "medium", "large"],
+            "description" : ""
+        },
+        {"type" : "Hong Kong Milk Tea",
+            "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
+            "size" : ["small", "medium", "large"],
+            "description" : ""
+        },
+        {"type" : "Matcha Milk Tea",
+            "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
+            "size" : ["small", "medium", "large"],
+            "description" : ""
+        }
+    ]
+}
