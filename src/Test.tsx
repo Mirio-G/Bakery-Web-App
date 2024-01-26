@@ -1,5 +1,5 @@
 import Logo from './assets/react.svg'
-import "./App.css";
+import "./style/App.css";
 import JsonDataDisplay from './components/Table.tsx';
 
 import { useEffect, useState } from 'react'
@@ -10,17 +10,15 @@ function Test() {
 
 	useEffect(() => {
 		const getItems = async () => {
-			const response = axios.get('http://localhost:5000/test');
+			const response = axios.get('http://localhost:5000/route/breads');
 
 			await response.then((res) => {
-				setItems(res.data.name);
+				setItems(res.data);
 			})
 		};
 
 		getItems();
 	},[]);	
-
-	console.log(items);
 
     return (
         <div className="App">

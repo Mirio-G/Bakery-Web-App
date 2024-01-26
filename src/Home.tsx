@@ -12,11 +12,15 @@ import Test from "./test.tsx";
 import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './style/App.css'
 
+<<<<<<< HEAD
 import Carousel from "./components/carousel.tsx";
 
 function Home() {
+=======
+function home() {
+>>>>>>> 03ddb9caaf992e67394092cd5c33dd486f679f55
   const [count, setCount] = useState(0);
 
   return (
@@ -29,7 +33,7 @@ function Home() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h1>ByteSized Bakery</h1>
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
@@ -42,10 +46,13 @@ function Home() {
         Click on the Vite and React logos to learn more
       </p>
 
+<<<<<<< HEAD
       <Carousel />
+=======
+>>>>>>> 03ddb9caaf992e67394092cd5c33dd486f679f55
       <Test />
     </>
   )
 }
 
-export default Home
+export default home
