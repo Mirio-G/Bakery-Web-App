@@ -1,5 +1,5 @@
 {
-    "name": [
+    "drinks": [
         {"type" : "House Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size": ["small", "medium", "large"],
@@ -34,6 +34,36 @@
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
             "description" : ""
+        }
+    ],
+    "bread": [
+        {"type" : "Ciabatta",
+            "description": "Ciabatta",
+            "price": ""
+        },
+        {"type" : "Bagel",
+            "description" : "Bagel"
+        },
+        {"type" : "Focaccia",
+            "description" : "Focaccia"
+        },
+        {"type" : "Sourdough",
+            "description" : "Sourdough"
+        },
+        {"type" : "Naan",
+            "description" : "Naan"
+        },
+        {"type" : "Brioche",
+            "description" : "Brioche"
+        },
+        {"type" : "English Muffin",
+            "description" : "English Muffin"
+        },
+        {"type" : "Flatbread",
+            "description" : "Flatbread"
+        },
+        {"type" : "Cornbread",
+            "description" : "Cornbread"
         }
     ]
 }
