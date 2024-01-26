@@ -15,7 +15,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './style/App.css'
 
-function Home() {
+function home() {
   const [count, setCount] = useState(0);
 
   return (
@@ -41,11 +41,9 @@ function Home() {
         Click on the Vite and React logos to learn more
       </p>
 
-      <Navbar />
-
       <Test />
     </>
   )
 }
 
-export default Home
+export default home
