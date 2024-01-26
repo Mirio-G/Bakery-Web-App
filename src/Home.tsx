@@ -14,13 +14,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './style/App.css'
 
-<<<<<<< HEAD
 import Carousel from "./components/carousel.tsx";
 
-function Home() {
-=======
 function home() {
->>>>>>> 03ddb9caaf992e67394092cd5c33dd486f679f55
   const [count, setCount] = useState(0);
 
   return (
@@ -46,10 +42,7 @@ function home() {
         Click on the Vite and React logos to learn more
       </p>
 
-<<<<<<< HEAD
       <Carousel />
-=======
->>>>>>> 03ddb9caaf992e67394092cd5c33dd486f679f55
       <Test />
     </>
   )
