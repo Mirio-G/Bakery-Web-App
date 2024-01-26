@@ -9,11 +9,12 @@ import RecordList from "./components/recordList.tsx";
 import Edit from "./components/edit.tsx";
 import Create from "./components/create.tsx";
 import Test from "./test.tsx";
-
 import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+
+import Carousel from "./components/carousel.tsx";
 
 function Home() {
   const [count, setCount] = useState(0);
@@ -41,8 +42,7 @@ function Home() {
         Click on the Vite and React logos to learn more
       </p>
 
-      <Navbar />
-
+      <Carousel />
       <Test />
     </>
   )
