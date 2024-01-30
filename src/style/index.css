@@ -6,7 +6,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-
+x
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,13 +28,24 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 5em;
+  line-height: 1;
+}
+h2{
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
+img{
+  width: 200px;
+  height: auto;
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;

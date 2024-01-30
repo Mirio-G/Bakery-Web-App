@@ -24,30 +24,27 @@ function home() {
   return (
     <>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        
       </div>
       <h1>ByteSized Bakery</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/Home.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className="banner">
+        <h2>
+        Welcome to the ByteSized Bakery App! Here you can order different menu items and services. <br></br>Enjoy your stay!
+        </h2>
 
+<<<<<<< HEAD
+        <img src="./src/assets/logo.png" alt="Logo"></img>
+      </div>
+      
+=======
       <Carousel />
       <Test />
       <Card />
+<<<<<<< HEAD
       <Chatbox />
+=======
+>>>>>>> 20547344c6f048dbf4753f2d63feaaaad9592fae
+>>>>>>> 858d42bef5e0b01d14d284293f72da12dd21cfcd
     </>
   )
 }
