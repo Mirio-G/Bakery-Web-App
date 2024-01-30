@@ -1,23 +1,17 @@
-.carousel-container{
-    background:#f1f1f1;
+.slides {
     display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
-}
-
-.carousel-item{
-    height: 20rem;;
-    min-width: 100%;
+    overflow-x: auto;
+    overflow-x: auto;
+  }
+  .slides > div {
+    display: flex;
+    flex-shrink: 0;
     width: 100%;
-    display: flex;
-    align-items:center;
+    height: 300px;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    background: #74ABE2;
     justify-content: center;
-    transition: ls cubic-bezier(0.39,0.575,0.565,1);
-}
-
-.carousel-control-prev{
-
-}
-.carousel-control-next{
-    
-}
+    align-items: center;
+    font-size: 100px;
+  }
