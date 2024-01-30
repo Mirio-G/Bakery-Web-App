@@ -36,34 +36,42 @@
             "description" : ""
         }
     ],
-    "bread": [
+    "breads": [
         {"type" : "Ciabatta",
             "description": "Ciabatta",
-            "price": ""
+            "price": "9.99"
         },
         {"type" : "Bagel",
-            "description" : "Bagel"
+            "description" : "Bagel",
+            "price": "9.99"
         },
         {"type" : "Focaccia",
-            "description" : "Focaccia"
+            "description" : "Focaccia",
+            "price": "9.99"
         },
         {"type" : "Sourdough",
-            "description" : "Sourdough"
+            "description" : "Sourdough",
+            "price": "9.99"
         },
         {"type" : "Naan",
-            "description" : "Naan"
+            "description" : "Naan",
+            "price": "9.99"
         },
         {"type" : "Brioche",
-            "description" : "Brioche"
+            "description" : "Brioche",
+            "price": "9.99"
         },
         {"type" : "English Muffin",
-            "description" : "English Muffin"
+            "description" : "English Muffin",
+            "price": "9.99"
         },
         {"type" : "Flatbread",
-            "description" : "Flatbread"
+            "description" : "Flatbread",
+            "price": "9.99"
         },
         {"type" : "Cornbread",
-            "description" : "Cornbread"
+            "description" : "Cornbread",
+            "price": "9.99"
         }
     ]
 }

@@ -10,10 +10,10 @@ function Test() {
 
 	useEffect(() => {
 		const getItems = async () => {
-			const response = axios.get('http://localhost:5000/test');
+			const response = axios.get('http://localhost:5000/route/breads');
 
 			await response.then((res) => {
-				setItems(res.data.bread);
+				setItems(res.data);
 			})
 		};
 
