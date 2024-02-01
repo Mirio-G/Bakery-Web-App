@@ -6,7 +6,7 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
-x
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -42,19 +42,16 @@ h2{
 
 }
 
-<<<<<<< HEAD
 h2{
   font-size: 30px;
   font-family: 'Times New Roman', Times, serif;
   text-align: left;
 }
 
-=======
 img{
   width: 200px;
   height: auto;
 }
->>>>>>> 858d42bef5e0b01d14d284293f72da12dd21cfcd
 button {
   border-radius: 8px;
   border: 1px solid transparent;

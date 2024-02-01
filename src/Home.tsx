@@ -8,15 +8,8 @@ const socket = socketIO.connect('http://localhost:5173/');
 
  // We import all the components we need in our app
 import Test from "./Test.tsx";
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-import Card from "./components/card.tsx"
->>>>>>> 20547344c6f048dbf4753f2d63feaaaad9592fae
-=======
 import Card from "./components/card.tsx";
 import Chatbox from "./components/chat/chatbox.tsx";
->>>>>>> e06e0923ecdefe9db0e36c6a8982e43ca93012a9
 
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -30,22 +23,9 @@ function home() {
 
   return (
     <>
-<<<<<<< HEAD
 
-      <body>
-        <div>
-          <h2 id="left"><b>Deals</b></h2>
-        </div>
-      </body>
-
-      <body>
-        <div>
-          <h2 id="left"><b>Trending</b></h2>
-        </div>
-      </body>
-=======
       <div>
-        
+
       </div>
       <h1>ByteSized Bakery</h1>
       <div className="banner">
@@ -53,19 +33,24 @@ function home() {
         Welcome to the ByteSized Bakery App! Here you can order different menu items and services. <br></br>Enjoy your stay!
         </h2>
 
-<<<<<<< HEAD
+
         <img src="./src/assets/logo.png" alt="Logo"></img>
       </div>
-      
-=======
-      <Carousel />
+
+
+      <div>
+        <h2 id="left">Deals</h2>
+        <Carousel />
+      </div>
+
+      <div>
+        <h2 id="left">Trending</h2>
+        <Carousel />
+      </div>
+
       <Test />
       <Card />
-<<<<<<< HEAD
-      <Chatbox />
-=======
->>>>>>> 20547344c6f048dbf4753f2d63feaaaad9592fae
->>>>>>> 858d42bef5e0b01d14d284293f72da12dd21cfcd
+
     </>
   )
 }
