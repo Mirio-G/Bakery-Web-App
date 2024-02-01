@@ -50,14 +50,15 @@ h3{
 img#bar{
   width: 400px;
   height: auto;
-  margin-top:30px;
+  margin-top:20px;
   margin-left:0px;
+  margin-bottom:50px;
 }
 
 img{
   width: 250px;
   height: auto;
-  margin-top:50px;
+  margin-top:25px;
 }
 button {
   border-radius: 8px;
