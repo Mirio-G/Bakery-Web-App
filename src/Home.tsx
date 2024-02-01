@@ -27,6 +27,7 @@ function home() {
       <div>
 
       </div>
+      
       <h1>ByteSized Bakery</h1>
       <div className="banner">
         <h2>
@@ -39,12 +40,12 @@ function home() {
 
 
       <div>
-        <h2 id="left">Deals</h2>
+        <h3 id="left">Deals</h3>
         <Carousel />
       </div>
 
       <div>
-        <h2 id="left">Trending</h2>
+        <h3 id="left">Trending</h3>
         <Carousel />
       </div>
 
