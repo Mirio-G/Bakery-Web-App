@@ -3,7 +3,7 @@ import '../carousel-item.css'
 
 const Carousel = () => {
   return ( // container
-    <div class="slides">
+    <div className="slides">
       <div> 1 </div>
       <div> 2 </div>
       <div> 3 </div>

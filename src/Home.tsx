@@ -1,20 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 // We use Route in order to define the different routes of our application
-import { Route, Routes } from "react-router-dom";
+import { useNavigate, Route, Routes } from "react-router-dom";
+
+import socketIO from 'socket.io-client';
+const socket = socketIO.connect('http://localhost:5173/');
 
  // We import all the components we need in our app
-import Navbar from "./components/navbar.tsx";
-import RecordList from "./components/recordList.tsx";
-import Edit from "./components/edit.tsx";
-import Create from "./components/create.tsx";
 import Test from "./Test.tsx";
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 import Card from "./components/card.tsx"
 >>>>>>> 20547344c6f048dbf4753f2d63feaaaad9592fae
+=======
+import Card from "./components/card.tsx";
+import Chatbox from "./components/chat/chatbox.tsx";
+>>>>>>> e06e0923ecdefe9db0e36c6a8982e43ca93012a9
 
-import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './style/App.css'
@@ -58,7 +61,11 @@ function home() {
       <Carousel />
       <Test />
       <Card />
+<<<<<<< HEAD
+      <Chatbox />
+=======
 >>>>>>> 20547344c6f048dbf4753f2d63feaaaad9592fae
+>>>>>>> 858d42bef5e0b01d14d284293f72da12dd21cfcd
     </>
   )
 }
