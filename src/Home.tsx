@@ -27,6 +27,7 @@ function home() {
       <div>
 
       </div>
+      
       <h1>ByteSized Bakery</h1>
       <div className="banner">
         <h2>
