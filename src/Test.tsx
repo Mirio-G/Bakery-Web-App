@@ -21,7 +21,7 @@ function Test() {
 	},[]);	
 
     return (
-        <div className="App">
+        <div className="container">
         	{items.map((item, idx) => (
     		<div key={idx}>
     			{items[idx].type}
