@@ -8,11 +8,10 @@ const socket = socketIO.connect('http://localhost:5173/');
 
  // We import all the components we need in our app
 import Test from "./Test.tsx";
-import Card from "./components/card.tsx";
-import Chatbox from "./components/chat/chatbox.tsx";
-
+import Card from './components/card.tsx'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+
 import './style/App.css'
 import './style/card.css'
 
@@ -67,6 +66,10 @@ function home() {
         <h3 id="left">Trending</h3>
         <Carousel />
       </div>
+
+      <Test />
+      <Card />
+      <Card />
     </>
   )
 }
