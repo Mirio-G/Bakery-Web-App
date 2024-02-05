@@ -60,16 +60,6 @@ function home() {
       <div>
         <img src="./src/assets/logo.png" alt="Logo"></img>
       </div>
-
-      <Chatbox />
-      <div>
-        <h3 id="left">Trending</h3>
-        <Carousel />
-      </div>
-
-      <Test />
-      <Card />
-      <Card />
     </>
   )
 }

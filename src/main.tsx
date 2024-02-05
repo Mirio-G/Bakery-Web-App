@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import socketIO from 'socket.io-client';
 
-import App from './home.tsx';
+import App from './Home.tsx';
 import ChatPage from "./components/chat/ChatPage.tsx";
 
 const socket = socketIO.connect('');
@@ -23,7 +23,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <link
         rel="stylesheet"
         type="text/css"
-        charset="UTF-8"
+        charSet="UTF-8"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
       />
       <link
@@ -33,16 +33,16 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       />
 
       {/*bootstrap*/}
-      <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossorigin></script>
-      <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js" crossorigin></script>
+      <script src="https://cdn.jsdelivr.net/npm/react/umd/react.production.min.js" crossOrigin="true"></script>
+      <script src="https://cdn.jsdelivr.net/npm/react-dom/umd/react-dom.production.min.js" crossOrigin="true"></script>
 
-      <script src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js" crossorigin></script>
+      <script src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js" crossOrigin="true"></script>
       
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-        crossorigin="anonymous"
+        crossOrigin="anonymous"
       />
 
     </BrowserRouter>
