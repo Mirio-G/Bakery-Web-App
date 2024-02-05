@@ -1,3 +1,5 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -65,15 +67,14 @@ h5{
 img#bar{
   width: 400px;
   height: auto;
-  margin-top:20px;
+  margin-top:30px;
   margin-left:0px;
-  margin-bottom:50px;
 }
 
 img{
   width: 250px;
   height: auto;
-  margin-top:25px;
+  margin-top:50px;
 }
 button {
   border-radius: 8px;
@@ -109,7 +110,7 @@ button:focus-visible {
 
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');*/
 
 * {
   box-sizing: border-box;
