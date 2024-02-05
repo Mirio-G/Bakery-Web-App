@@ -49,6 +49,21 @@ h3{
   font-family: 'Times New Roman', Times, serif;
   text-align: left;
 }
+
+h4{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: left;
+  Margin-left: 150px;
+}
+
+h5{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: right;
+  margin-right: 150px;
+}
+
 img#bar{
   width: 400px;
   height: auto;

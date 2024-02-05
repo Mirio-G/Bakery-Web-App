@@ -19,6 +19,7 @@ import './style/card.css'
 // bootstrap
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import './style/card.css';
 
 import Carousel from "./components/carousel.tsx";
 
@@ -27,13 +28,19 @@ function home() {
 
   return (
     <>
+
+
       <h1>ByteSized Bakery</h1>
       <div className="banner">
         <h2>
         Welcome to the ByteSized Bakery App! Here you can order different menu items and services. <br></br>Enjoy your stay!
         </h2>
-
         <img src="./src/assets/logo.png" alt="Logo"></img>
+        <img src="./src/assets/logo.png" alt="Logo"></img> <br></br>
+        <div className = "points">
+        <h4>My Points</h4> <h5>0 Pts</h5>
+        </div>
+        <img src="./src/assets/bar.png" alt="Bar" id="bar"></img>
       </div>
 
 
@@ -56,6 +63,10 @@ function home() {
       </div>
 
       <Chatbox />
+      <div>
+        <h3 id="left">Trending</h3>
+        <Carousel />
+      </div>
     </>
   )
 }
