@@ -15,6 +15,8 @@ import Test from "./Test.tsx";
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './style/App.css'
+import Card from './components/card.tsx'
+import './style/card.css'
 
 import Carousel from "./components/carousel.tsx";
 
@@ -51,7 +53,7 @@ function home() {
 
       <Test />
 
-      
+      <Card />
     </>
   )
 }
