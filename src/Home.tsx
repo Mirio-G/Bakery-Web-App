@@ -15,6 +15,8 @@ import Test from "./Test.tsx";
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './style/App.css'
+import Card from './components/card.tsx'
+import './style/card.css'
 
 import Carousel from "./components/carousel.tsx";
 
@@ -24,10 +26,7 @@ function home() {
   return (
     <>
 
-      <div>
 
-      </div>
-      
       <h1>ByteSized Bakery</h1>
       <div className="banner">
         <h2>
@@ -35,6 +34,9 @@ function home() {
         </h2>
 
         <img src="./src/assets/logo.png" alt="Logo"></img> <br></br>
+        <div className = "points">
+        <h4>My Points</h4> <h5>0 Pts</h5>
+        </div>
         <img src="./src/assets/bar.png" alt="Bar" id="bar"></img>
       </div>
 
@@ -51,7 +53,7 @@ function home() {
 
       <Test />
 
-      
+      <Card />
     </>
   )
 }
