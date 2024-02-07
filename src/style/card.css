@@ -2,8 +2,8 @@
     font-family: "Times New Roman", Times, serif;
     background-color: #ffffff;
     color: hsl(0, 0%, 0%);
-    height: 23vw;
-    width: 19vw;
+    max-height: 26em;
+    max-width: 24em;
     border: 2px solid #000000;
     padding: 1em;
     margin: 1em;

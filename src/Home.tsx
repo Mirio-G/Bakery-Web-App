@@ -26,6 +26,7 @@ function home() {
   const [count, setCount] = useState(0);
 
   return (
+    
       <>
 
         <Row className="banner p-4">
