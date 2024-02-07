@@ -43,24 +43,16 @@ function home() {
               </div>
             </Row>
 
-<<<<<<< HEAD
-          <div className = "points">
-            <span id = "makeLeft">My points</span> <span id = "makeRight">0 pts</span>
-          </div>
-
-          <div>
-            <img src="./src/assets/bar.png" alt="Bar" id="bar"></img>
-          </div>
-=======
             <Row>
               <div className = "points">
-                <h4>My Points</h4> <h5>0 Pts</h5>
+                <span id = "makeLeft">My points</span> <span id = "makeRight">0 pts</span>
+              </div>
 
+              <div>
                 <img src="./src/assets/bar.png" alt="Bar" id="bar"></img>
               </div>
             </Row>
           </Container>
->>>>>>> 0797a788df79cc9a50409f451de85f804a64300e
         </Row>
 
 
