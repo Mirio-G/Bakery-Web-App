@@ -16,8 +16,8 @@ function Test() {
 				setItems(res.data);
 			})
 		};
-
 		getItems();
+		
 	},[]);	
 
     return (
