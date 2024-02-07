@@ -29,22 +29,38 @@ function home() {
       <>
 
         <Row className="banner p-4">
-          <div>
-            <h1>ByteSized Bakery</h1>
-            <h2 className="d-sm-none d-md-block">
-            Welcome to the ByteSized Bakery App! Here you can order different menu items and services. <br></br>Enjoy your stay!
-            </h2>
-          </div>
+          <Container>
+            <Row>
+              <h1>ByteSized Bakery</h1>
+              <h2 className="d-none d-md-block">
+              Welcome to the ByteSized Bakery App! Here you can order different menu items and services. <br></br>Enjoy your stay!
+              </h2>
+            </Row>
 
-          <div>
-            <img src="./src/assets/logo.png" alt="Logo"></img>
-          </div>
+            <Row>
+              <div>
+                <img src="./src/assets/logo.png" alt="Logo"></img>
+              </div>
+            </Row>
 
+<<<<<<< HEAD
           <div className = "points">
-            <h4>My Points</h4> <h5>0 Pts</h5>
+            <span id = "makeLeft">My points</span> <span id = "makeRight">0 pts</span>
+          </div>
 
+          <div>
             <img src="./src/assets/bar.png" alt="Bar" id="bar"></img>
           </div>
+=======
+            <Row>
+              <div className = "points">
+                <h4>My Points</h4> <h5>0 Pts</h5>
+
+                <img src="./src/assets/bar.png" alt="Bar" id="bar"></img>
+              </div>
+            </Row>
+          </Container>
+>>>>>>> 0797a788df79cc9a50409f451de85f804a64300e
         </Row>
 
 
