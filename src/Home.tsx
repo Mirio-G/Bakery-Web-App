@@ -26,7 +26,7 @@ function home() {
   const [count, setCount] = useState(0);
 
   return (
-      <Container fluid>
+      <>
 
         <Row className="banner p-4">
           <div>
@@ -68,7 +68,7 @@ function home() {
           </div>
         </Row>
 
-      </Container>
+      </>
   )
 }
 
