@@ -26,41 +26,49 @@ function home() {
   const [count, setCount] = useState(0);
 
   return (
-    <>
+      <Container fluid>
 
+        <Row className="banner p-4">
+          <div>
+            <h1>ByteSized Bakery</h1>
+            <h2 className="d-sm-none d-md-block">
+            Welcome to the ByteSized Bakery App! Here you can order different menu items and services. <br></br>Enjoy your stay!
+            </h2>
+          </div>
 
-      <h1>ByteSized Bakery</h1>
-      <div className="banner">
-        <h2>
-        Welcome to the ByteSized Bakery App! Here you can order different menu items and services. <br></br>Enjoy your stay!
-        </h2>
-        <img src="./src/assets/logo.png" alt="Logo"></img>
-        <img src="./src/assets/logo.png" alt="Logo"></img> <br></br>
-        <div className = "points">
-        <h4>My Points</h4> <h5>0 Pts</h5>
-        </div>
-        <img src="./src/assets/bar.png" alt="Bar" id="bar"></img>
-      </div>
+          <div>
+            <img src="./src/assets/logo.png" alt="Logo"></img>
+          </div>
 
+          <div className = "points">
+            <h4>My Points</h4> <h5>0 Pts</h5>
 
-      <Container className="p-4">
-        <Row>
-          <h3 id="left">Deals</h3>
-          <Carousel />
+            <img src="./src/assets/bar.png" alt="Bar" id="bar"></img>
+          </div>
         </Row>
-      </Container>
 
-      <Container className="p-4">
-        <Row>
-          <h3 id="left">Trending</h3>
-          <Carousel />
+
+        <Row className="p-4">
+          <div>
+            <h3 id="left">Deals</h3>
+            <Carousel />
+          </div>
         </Row>
-      </Container>
 
-      <div>
-        <img src="./src/assets/logo.png" alt="Logo"></img>
-      </div>
-    </>
+        <Row className="p-4">
+          <div>
+            <h3 id="left">Trending</h3>
+            <Carousel />
+          </div>
+        </Row>
+
+        <Row>
+          <div>
+            <img src="./src/assets/logo.png" alt="Logo"></img>
+          </div>
+        </Row>
+
+      </Container>
   )
 }
 
