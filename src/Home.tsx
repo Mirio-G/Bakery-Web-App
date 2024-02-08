@@ -9,6 +9,7 @@ const socket = socketIO.connect('http://localhost:5173/');
  // We import all the components we need in our app
 import Test from "./Test.tsx";
 import Card from './components/card.tsx'
+import CardPop from './components/card-pop.tsx'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
@@ -76,7 +77,7 @@ function home() {
             <img src="./src/assets/logo.png" alt="Logo"></img>
           </div>
         </Row>
-
+        <CardPop/>
       </>
   )
 }

@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Card-Pop() {
+function CardPop() {
     return (
-        <div className="card-container">
+        <div className="card-pop-container">
         <form action="results.html" method="POST">
             <hr></hr>
         
@@ -39,4 +39,4 @@ function Card-Pop() {
     );
 }
 
-export default Card-Pop;
+export default CardPop;
