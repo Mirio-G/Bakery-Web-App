@@ -35,7 +35,7 @@ body {
 
 h1 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 6em;
+  font-size: 5em;
   line-height: 1.2;
 }
 h2{
@@ -71,7 +71,7 @@ span#makeRight{
 }
 
 img#bar{
-  width: 400px;
+  width: 360px;
   height: auto;
   margin-top:30px;
   margin-left:0px;
