@@ -1,28 +1,47 @@
 .card-container {
-    font-family: "Times New Roman", Times, serif;
+        font-family: "Times New Roman", Times, serif;
     background-color: #ffffff;
     color: hsl(0, 0%, 0%);
-    height: 50%;
-    width: 12em;
+    max-height: 26em;
+    max-width: 24em;
     border: 2px solid #000000;
     padding: 1em;
     margin: 1em;
+    
+}
+.card-pop-container {
+    font-family: "Times New Roman", Times, serif;
+    background-color: #ffffff;
+    color: hsl(0, 0%, 0%);
+    max-height: 28em;
+    max-width: 24em;
+    border: 2px solid #000000;
+    padding: 1em;
+    margin: 1em;
+
 }
 .card-item{
     text-align: left;
+    padding-left: 10%;
 }
 .card-price{
     text-align: left;
+    padding-left: 10%;
+    clear: left
+}
+.card-order{
+    text-align: right;
+    padding-right: 10%;
 }
 .card-img-holder{
     background-color: #d9d9d9;
     width: 80%;
-    height: 5em;
+    max-height: 10em;
     padding: auto;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .card-quantity{
@@ -64,7 +83,11 @@
 }
 
 .card-img{
-    width:50%;
-    height:50%;
-    object-fit: contain;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    max-height: 50%;
+    max-width: 50%;
 }

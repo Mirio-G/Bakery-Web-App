@@ -35,7 +35,7 @@ body {
 
 h1 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 6em;
+  font-size: 5em;
   line-height: 1.2;
 }
 h2{
@@ -44,24 +44,30 @@ h2{
   margin-top:20px;  
 }
 
-h3{
-  font-size: 30px;
+h3#left{
+  font-size: 50px;
   font-family: 'Times New Roman', Times, serif;
   text-align: left;
 }
 
-h4{
-  font-size: 25px;
+span#makeLeft{
+  font-size: 40px;
   font-family: 'Times New Roman', Times, serif;
-  text-align: left;
-  Margin-left: 150px;
 }
 
-h5{
-  font-size: 25px;
+span#makeRight{
+  font-size: 40px;
   font-family: 'Times New Roman', Times, serif;
-  text-align: right;
-  margin-right: 150px;
+}
+
+#makeLeft{
+  float: inline-start;
+  padding-left: 150px;
+}
+
+#makeRight{
+  float: inline-end;
+  padding-right: 150px;
 }
 
 img#bar{

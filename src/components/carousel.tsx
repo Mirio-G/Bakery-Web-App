@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import Slider from 'react-slick';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import logo from '../assets/logo.png';
-
 import '../carousel-item.css'
 import Card from '../components/card.tsx'
 import '../style/card.css'
@@ -14,29 +12,56 @@ const Carousel = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
+
 
   return ( // container
     <Container>
-      <Row >
+      <Row>
         <Slider {...settings}>
           <div>
-            <img className="d-block w-100" src={logo} alt="First slide"/>
+            <Card/>
           </div>
           <div>
-            <img className="d-block w-100" src={logo} alt="First slide"/>
+            <Card/>
           </div>
           <div>
-            <img className="d-block w-100" src={logo} alt="First slide"/>
+            <Card/>
           </div>
           <div>
-            <img className="d-block w-100" src={logo} alt="First slide"/>
+            <Card/>
           </div>
           <div>
-            <img className="d-block w-100" src={logo} alt="First slide"/>
+            <Card/>
           </div>
           <div>
-            <img className="d-block w-100" src={logo} alt="First slide"/>
+            <Card/>
           </div>
         </Slider>
       </Row>

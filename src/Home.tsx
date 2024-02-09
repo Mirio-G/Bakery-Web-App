@@ -9,6 +9,7 @@ const socket = socketIO.connect('http://localhost:5173/');
  // We import all the components we need in our app
 import Test from "./Test.tsx";
 import Card from './components/card.tsx'
+import CardPop from './components/card-pop.tsx'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
@@ -26,6 +27,7 @@ function home() {
   const [count, setCount] = useState(0);
 
   return (
+    
       <>
 
         <Row className="banner p-4">
@@ -45,8 +47,10 @@ function home() {
 
             <Row>
               <div className = "points">
-                <h4>My Points</h4> <h5>0 Pts</h5>
+                <span id = "makeLeft">My points</span> <span id = "makeRight">0 pts</span>
+              </div>
 
+              <div>
                 <img src="./src/assets/bar.png" alt="Bar" id="bar"></img>
               </div>
             </Row>
@@ -73,7 +77,7 @@ function home() {
             <img src="./src/assets/logo.png" alt="Logo"></img>
           </div>
         </Row>
-
+        <CardPop/>
       </>
   )
 }
