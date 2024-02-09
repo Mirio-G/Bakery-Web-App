@@ -29,6 +29,13 @@ function home() {
   return (
     
       <>
+        <nav className="navbar fixed-bottom navbar-light bg-light">
+          <a className="nav-item nav-link" href="#">Menu</a>
+          <a className="navbar-brand" href="#">
+            <img src="./src/assets/toplogo.png" alt="logo" id="navlogo"></img>
+          </a>
+          <a className="nav-item nav-link" href="#">Checkout</a>
+        </nav>
 
         <Row className="banner p-4">
           <Container>
@@ -72,12 +79,7 @@ function home() {
           </div>
         </Row>
 
-        <Row>
-          <div>
-            <img src="./src/assets/logo.png" alt="Logo"></img>
-          </div>
-        </Row>
-        <CardPop/>
+
       </>
   )
 }

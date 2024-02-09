@@ -71,10 +71,16 @@ span#makeRight{
 }
 
 img#bar{
-  width: 400px;
+  width: 360px;
   height: auto;
   margin-top:30px;
   margin-left:0px;
+}
+
+img#navlogo{
+  width: 60px;
+  height: auto;
+  margin-top: 0px;
 }
 
 img{
@@ -82,6 +88,7 @@ img{
   height: auto;
   margin-top:50px;
 }
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
@@ -270,4 +277,12 @@ button:focus-visible {
   bottom: 50px;
   font-size: 13px;
   font-style: italic;
+}
+.nav-link {
+  color: black;
+  padding: 10px;
+  transition: all 0;
+}
+.navbar-brand {
+  margin-right: 0px;
 }
