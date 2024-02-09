@@ -67,7 +67,7 @@ function home() {
         </Row>
 
         <Row className="p-4">
-          <div>
+          <div style={{paddingBottom: 115}}>
             <h3 id="left">Trending</h3>
             <Carousel />
           </div>
