@@ -281,8 +281,10 @@ button:focus-visible {
 .nav-link {
   color: black;
   padding: 10px;
-  transition: all 0;
 }
 .navbar-brand {
   margin-right: 0px;
+}
+.navbar {
+  color: black;
 }

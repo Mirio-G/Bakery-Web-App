@@ -12,6 +12,7 @@ import Card from './components/card.tsx'
 import CardPop from './components/card-pop.tsx'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Navbar from "./components/navbar.tsx";
 
 import './style/App.css'
 import './style/card.css'
@@ -29,14 +30,7 @@ function home() {
   return (
     
       <>
-        <nav className="navbar fixed-bottom navbar-light bg-light">
-          <a className="nav-item nav-link" href="#">Menu</a>
-          <a className="navbar-brand" href="#">
-            <img src="./src/assets/toplogo.png" alt="logo" id="navlogo"></img>
-          </a>
-          <a className="nav-item nav-link" href="#">Checkout</a>
-        </nav>
-
+        <Navbar/>
         <Row className="banner p-4">
           <Container>
             <Row>
