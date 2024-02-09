@@ -32,14 +32,11 @@ function home() {
 
         <Row className="banner p-4">
           <Container>
-            <Row>
+            <Row className = "top full-bleed">
               <h1>ByteSized Bakery</h1>
               <h2 className="d-none d-md-block">
               Welcome to the ByteSized Bakery App! Here you can order different menu items and services. <br></br>Enjoy your stay!
               </h2>
-            </Row>
-
-            <Row>
               <div>
                 <img src="./src/assets/logo.png" alt="Logo"></img>
               </div>
