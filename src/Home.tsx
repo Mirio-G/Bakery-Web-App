@@ -12,6 +12,7 @@ import Card from './components/card.tsx'
 import CardPop from './components/card-pop.tsx'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import Navbar from "./components/navbar.tsx";
 
 import './style/App.css'
 import './style/card.css'
@@ -29,7 +30,7 @@ function home() {
   return (
     
       <>
-
+        <Navbar/>
         <Row className="banner p-4">
           <Container>
             <Row className = "top full-bleed">
@@ -63,18 +64,13 @@ function home() {
         </Row>
 
         <Row className="p-4">
-          <div>
+          <div style={{paddingBottom: 115}}>
             <h3 id="left">Trending</h3>
             <Carousel />
           </div>
         </Row>
 
-        <Row>
-          <div>
-            <img src="./src/assets/logo.png" alt="Logo"></img>
-          </div>
-        </Row>
-        <CardPop/>
+
       </>
   )
 }
