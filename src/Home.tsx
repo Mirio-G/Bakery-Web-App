@@ -23,6 +23,7 @@ import Row from 'react-bootstrap/Row';
 import './style/card.css';
 
 import Carousel from "./components/carousel.tsx";
+import Navbar from "./components/navbar.tsx";
 
 function home() {
   const [count, setCount] = useState(0);
@@ -30,6 +31,7 @@ function home() {
   return (
     
       <>
+        <Navbar />
 
         <Row className="banner p-4">
           <Container>
