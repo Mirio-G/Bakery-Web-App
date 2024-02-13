@@ -71,13 +71,7 @@ function home() {
             <Carousel />
           </div>
         </Row>
-
-        <Row>
-          <div>
-            <img src="./src/assets/logo.png" alt="Logo"></img>
-          </div>
-        </Row>
-        <CardPop/>
+        
       </>
   )
 
