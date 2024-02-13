@@ -3,36 +3,43 @@
         {"type" : "House Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size": ["small", "medium", "large"],
+            "img" : "./src/assets/Drinks/House_Milk_Tea.webp",
             "description": "House Milk tea"
         },
         {"type" : "Jasmine Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
+            "img" : "./src/assets/Drinks/Jasmine_Milk_Tea.webp",
             "description" : ""
         },
         {"type" : "Caramel Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
+            "img" : "./src/assets/Drinks/Caramel_Milk_Tea.jpg",
             "description" : ""
         },
         {"type" : "Taro Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
+            "img" : "./src/assets/Drinks/Taro_Milk_Tea.jpg",
             "description" : ""
         },
         {"type" : "Thai Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
+            "img" : "./src/assets/Drinks/Thai_Milk_Tea.jpg",
             "description" : ""
         },
         {"type" : "Hong Kong Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
+            "img" : "./src/assets/Drinks/Hong_Kong_Milk_Tea.jpg",
             "description" : ""
         },
         {"type" : "Matcha Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
+            "img" : "./src/assets/Drinks/Match_Milk_Tea.jpg",
             "description" : ""
         }
     ],
@@ -43,34 +50,42 @@
         },
         {"type" : "Bagel",
             "description" : "Bagel",
+            "img" : "./src/assets/Breads/bagel.jpg",
             "price": "9.99"
         },
         {"type" : "Focaccia",
             "description" : "Focaccia",
+            "img" : "./src/assets/Breads/focaccia.jpg",
             "price": "9.99"
         },
         {"type" : "Sourdough",
             "description" : "Sourdough",
+            "img" : "./src/assets/Breads/sourdough.jpg",
             "price": "9.99"
         },
         {"type" : "Naan",
             "description" : "Naan",
+            "img" : "./src/assets/Breads/naan.jpg",
             "price": "9.99"
         },
         {"type" : "Brioche",
             "description" : "Brioche",
+            "img" : "./src/assets/Breads/brioche.jpg",
             "price": "9.99"
         },
         {"type" : "English Muffin",
             "description" : "English Muffin",
+            "img" : "./src/assets/Breads/English_Muffin.jpg",
             "price": "9.99"
         },
         {"type" : "Flatbread",
             "description" : "Flatbread",
+            "img" : "./src/assets/Breads/flatbread.jpg",
             "price": "9.99"
         },
         {"type" : "Cornbread",
             "description" : "Cornbread",
+            "img" : "./src/assets/Breads/cornbread.jpg",
             "price": "9.99"
         }
     ]
