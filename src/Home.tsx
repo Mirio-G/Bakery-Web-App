@@ -22,6 +22,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import './style/card.css';
 
+import Navbar from "./components/navbar.tsx";
 import Carousel from "./components/carousel.tsx";
 
 function home() {
@@ -30,7 +31,7 @@ function home() {
   return (
     
       <>
-
+        <Navbar/>
         <Row className="banner p-4">
           <Container>
             <Row className = "top full-bleed">
