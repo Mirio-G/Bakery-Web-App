@@ -22,8 +22,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import './style/card.css';
 
-import Carousel from "./components/carousel.tsx";
 import Navbar from "./components/navbar.tsx";
+import Carousel from "./components/carousel.tsx";
 
 function home() {
   const [count, setCount] = useState(0);

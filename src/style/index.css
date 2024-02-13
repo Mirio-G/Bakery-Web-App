@@ -294,3 +294,6 @@ button:focus-visible {
 .navbar {
   color: black;
 }
+.progress{
+  height: 40px
+}
