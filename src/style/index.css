@@ -5,9 +5,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;  
+  color-scheme: light;
+  color: rgba(27, 27, 27, 0.87);
+  background-color: #f7f7f7;  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,13 +32,11 @@ body {
   min-height: 100vh;
 
 }
-.full-bleed{
-  box-shadow: 0 0 0 100vmax #d1512d;
-  clip-path: inset (0 -100vmax);
+.banner{
+  background-color: #160a01;
+
 }
-.top{
-  background-color: #d1512d;
-}
+
 h1 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 5em;

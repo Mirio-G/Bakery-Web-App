@@ -31,8 +31,8 @@ function home() {
     
       <>
         <Navbar/>
-        <Row className="banner p-4">
-          <Container>
+        <Row>
+          <Container className = "banner">
             <Row className = "top full-bleed">
               <h1>ByteSized Bakery</h1>
               <h2 className="d-none d-md-block">
@@ -42,7 +42,7 @@ function home() {
                 <img src="./src/assets/logo.png" alt="Logo"></img>
               </div>
             </Row>
-
+          
             <Row>
               <div className = "points">
                 <span id = "makeLeft">My points</span> <span id = "makeRight">0 pts</span>
@@ -52,8 +52,9 @@ function home() {
                 <img src="./src/assets/bar.png" alt="Bar" id="bar"></img>
               </div>
             </Row>
-          </Container>
+            </Container>
         </Row>
+        
 
 
         <Row className="p-4">
