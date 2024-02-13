@@ -13,8 +13,8 @@ function CardPop() {
             </div>
             <div className="card-price">$$$$</div>
 
-            <div className="card-img-holder">
-                <img className="card-img" src="./src/assets/logo.png" alt="Logo"></img>
+            <div className="card-pop-img-holder">
+                <img className="card-pop-img" src="./src/assets/logo.png" alt="Logo"></img>
             </div>
 
             

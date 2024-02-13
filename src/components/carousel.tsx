@@ -5,6 +5,10 @@ import Row from 'react-bootstrap/Row';
 import '../carousel-item.css'
 import Card from '../components/card.tsx'
 import '../style/card.css'
+
+
+import Test from '/src/Test.tsx'
+
 const Carousel = () => {
   let settings = {
     dots: true,
@@ -46,10 +50,10 @@ const Carousel = () => {
       <Row>
         <Slider {...settings}>
           <div>
-            <Card/>
+            <Card imgSrc="./src/assets/logo.png" name="Logo"/>
           </div>
-          <div>
-            <Card/>
+        <div>
+            <Card imgSrc="./src/assets/Breads/bagel.jpg" name="Bagel"/>
           </div>
           <div>
             <Card/>
@@ -65,6 +69,8 @@ const Carousel = () => {
           </div>
         </Slider>
       </Row>
+
+      <div><Test /></div>
     </Container>
   )
 }
