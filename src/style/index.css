@@ -68,12 +68,10 @@ span#makeRight{
 
 #makeLeft{
   float: inline-start;
-  padding-left: 150px;
 }
 
 #makeRight{
   float: inline-end;
-  padding-right: 150px;
 }
 
 img#bar{
@@ -88,6 +86,7 @@ img{
   height: auto;
   margin-top:50px;
 }
+
 button {
   border-radius: 8px;
   border: 1px solid transparent;
