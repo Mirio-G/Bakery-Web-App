@@ -1,5 +1,5 @@
 import React from 'react';
-import index.
+
 function Navbar() {
     return (
         <div>
