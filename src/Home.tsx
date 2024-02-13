@@ -12,7 +12,7 @@ import Card from './components/card.tsx'
 import CardPop from './components/card-pop.tsx'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import Navbar from "./components/navbar.tsx";
+import PBar from './components/progress_bar.tsx'
 
 import './style/App.css'
 import './style/card.css'
@@ -30,9 +30,9 @@ function home() {
   return (
     
       <>
-        <Navbar/>
-        <Row>
-          <Container className = "banner">
+
+        <Row className="banner p-4">
+          <Container>
             <Row className = "top full-bleed">
               <h1>ByteSized Bakery</h1>
               <h2 className="d-none d-md-block">
@@ -42,19 +42,18 @@ function home() {
                 <img src="./src/assets/logo.png" alt="Logo"></img>
               </div>
             </Row>
-          
+
             <Row>
               <div className = "points">
                 <span id = "makeLeft">My points</span> <span id = "makeRight">0 pts</span>
               </div>
 
               <div>
-                <img src="./src/assets/bar.png" alt="Bar" id="bar"></img>
+                <PBar/>
               </div>
             </Row>
-            </Container>
+          </Container>
         </Row>
-        
 
 
         <Row className="p-4">
@@ -65,15 +64,21 @@ function home() {
         </Row>
 
         <Row className="p-4">
-          <div style={{paddingBottom: 115}}>
+          <div>
             <h3 id="left">Trending</h3>
             <Carousel />
           </div>
         </Row>
 
-
+        <Row>
+          <div>
+            <img src="./src/assets/logo.png" alt="Logo"></img>
+          </div>
+        </Row>
+        <CardPop/>
       </>
   )
+
 }
 
 export default home
