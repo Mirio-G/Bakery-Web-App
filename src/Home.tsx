@@ -24,7 +24,6 @@ import './style/card.css';
 
 import Navbar from "./components/navbar.tsx";
 import Carousel from "./components/carousel.tsx";
-import Navbar from "./components/navbar.tsx";
 
 function home() {
   const [count, setCount] = useState(0);
