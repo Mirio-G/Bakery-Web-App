@@ -32,13 +32,11 @@ body {
   min-height: 100vh;
 
 }
-.full-bleed{
-  box-shadow: 0 0 0 100vmax #d1512d;
-  clip-path: inset (0 -100vmax);
+.banner{
+  background-color: #301603;
+  color: #ffffff;
 }
-.top{
-  background-color: #d1512d;
-}
+
 h1 {
   font-family: 'Times New Roman', Times, serif;
   font-size: 5em;
