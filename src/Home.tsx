@@ -24,6 +24,7 @@ import './style/card.css';
 
 import Navbar from "./components/navbar.tsx";
 import Carousel from "./components/carousel.tsx";
+import Navbar from "./components/navbar.tsx";
 
 function home() {
   const [count, setCount] = useState(0);
@@ -31,11 +32,12 @@ function home() {
   return (
     
       <>
-        <Navbar/>
+        <Navbar />
+
         <Row className="banner p-4">
           <Container>
             <Row className = "top full-bleed">
-              <h1>ByteSized Bakery</h1>
+              <h1><i>ByteSized Bakery</i></h1>
               <h2 className="d-none d-md-block">
               Welcome to the ByteSized Bakery App! Here you can order different menu items and services. <br></br>Enjoy your stay!
               </h2>
@@ -70,13 +72,7 @@ function home() {
             <Carousel />
           </div>
         </Row>
-
-        <Row>
-          <div>
-            <img src="./src/assets/logo.png" alt="Logo"></img>
-          </div>
-        </Row>
-        <CardPop/>
+        
       </>
   )
 

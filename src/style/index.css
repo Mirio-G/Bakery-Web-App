@@ -57,25 +57,29 @@ h3#left{
 span#makeLeft{
   font-size: 40px;
   font-family: 'Times New Roman', Times, serif;
+  margin-top: 20px;
 }
 
 span#makeRight{
   font-size: 40px;
   font-family: 'Times New Roman', Times, serif;
+  margin-top: 20px;
 }
 
 #makeLeft{
   float: inline-start;
+  padding-left: 5%;
 }
 
 #makeRight{
   float: inline-end;
+  padding-right: 5%;
 }
 
 img#bar{
-  width: 360px;
+  width: 280px;
   height: auto;
-  margin-top:30px;
+  margin-top:15px;
   margin-left:0px;
 }
 
