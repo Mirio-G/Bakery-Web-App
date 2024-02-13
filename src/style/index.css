@@ -5,9 +5,9 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light;
-  color: rgba(27, 27, 27, 0.87);
-  background-color: #f7f7f7;  
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;  
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -34,7 +34,7 @@ body {
 }
 .banner{
   background-color: #160a01;
-
+  color: #ffffff;
 }
 
 h1 {
