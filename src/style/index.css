@@ -75,10 +75,16 @@ span#makeRight{
 }
 
 img#bar{
-  width: 400px;
+  width: 360px;
   height: auto;
   margin-top:30px;
   margin-left:0px;
+}
+
+img#navlogo{
+  width: 60px;
+  height: auto;
+  margin-top: 0px;
 }
 
 img{
@@ -275,4 +281,14 @@ button:focus-visible {
   bottom: 50px;
   font-size: 13px;
   font-style: italic;
+}
+.nav-link {
+  color: black;
+  padding: 10px;
+}
+.navbar-brand {
+  margin-right: 0px;
+}
+.navbar {
+  color: black;
 }
