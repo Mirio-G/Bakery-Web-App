@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
 import '../style/card.css';
+
 import PopupComponent from './card-pop.tsx';
 
 interface CardProps {
@@ -8,7 +12,10 @@ interface CardProps {
 }
 
 const Card = ({ imgSrc, name }: CardProps) => {
+    const [show, setShow] = useState(false);
 
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     return (
         <div className="card-container">
@@ -19,9 +26,28 @@ const Card = ({ imgSrc, name }: CardProps) => {
             <div>
                 <div className="card-item">{name}</div>
                 <div className="card-order">
-                    <a href="#">Order Now</a>
+                    <a type="Button" onClick={handleShow}>Order Now</a>
                 </div>
             </div>
+
+            <Modal show={show} onHide={handleClose}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Modal heading</Modal.Title>
+                </Modal.Header>
+                
+                <Modal.Body>
+                    <PopupComponent />
+                </Modal.Body>
+                
+                <Modal.Footer>
+                    <Button variant="secondary" onClick={handleClose}>
+                        Close
+                    </Button>
+                    <Button variant="primary" onClick={handleClose}>
+                        Save Changes
+                    </Button>
+                </Modal.Footer>
+            </Modal>
         </div>
     );
 };
