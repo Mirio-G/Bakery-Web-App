@@ -67,12 +67,11 @@ function home() {
         </Row>
 
         <Row className="p-4">
-          <div>
+          <div className = "trending">
             <h3 id="left">Trending</h3>
             <Carousel />
           </div>
         </Row>
-        
       </>
   )
 
