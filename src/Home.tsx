@@ -44,7 +44,8 @@ function home() {
                 <img src="./src/assets/logo.png" alt="Logo"></img>
               </div>
             </Row>
-
+          </Container>
+        </Row>
             <Row>
               <div className = "points">
                 <span id = "makeLeft">My points</span> <span id = "makeRight">0 pts</span>
@@ -54,8 +55,8 @@ function home() {
                 <PBar/>
               </div>
             </Row>
-          </Container>
-        </Row>
+          
+
 
 
         <Row className="p-4">
@@ -66,12 +67,11 @@ function home() {
         </Row>
 
         <Row className="p-4">
-          <div>
+          <div className = "trending">
             <h3 id="left">Trending</h3>
             <Carousel />
           </div>
         </Row>
-        
       </>
   )
 
