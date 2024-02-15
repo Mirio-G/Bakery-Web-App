@@ -40,10 +40,10 @@ const Card = ({ imgSrc, name }: CardProps) => {
                 </Modal.Body>
                 
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button variant="Secondary" onClick={handleClose}>
                         Close
                     </Button>
-                    <Button variant="primary" onClick={handleClose}>
+                    <Button variant="Secondary" onClick={handleClose}>
                         Save Changes
                     </Button>
                 </Modal.Footer>

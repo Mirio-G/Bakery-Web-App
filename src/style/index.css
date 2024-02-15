@@ -42,10 +42,27 @@ h1 {
   font-size: 5em;
   line-height: 1.2;
 }
+
 h2{
   font-size: 25px;
   font-family: 'Times New Roman', Times, serif;
   margin-top:20px;  
+}
+
+h2#makeLeft{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top:20px;
+  float: inline-start;
+  padding-left: 75%;
+}
+
+h2#makeRight{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top:20px;
+  float: inline-end;
+  padding-right: 50%;
 }
 
 h3#left{
@@ -95,20 +112,34 @@ img{
   margin-top:50px;
 }
 
+.slick-arrow.slick-next::before,
+.slick-arrow.slick-prev::before{
+  background-color: #301603;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 5% 5%;
+  font-size: 15px;
+  font-weight: 100px;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
 button {
+  background-color: #301603;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #301603;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
