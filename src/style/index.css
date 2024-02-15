@@ -67,7 +67,7 @@ h2#makeRight{
 }
 
 h3#left{
-  font-size: 50px;
+  font-size: 35px;
   font-family: 'Times New Roman', Times, serif;
   text-align: left;
 }
@@ -328,4 +328,7 @@ button:focus-visible {
 }
 .progress{
   height: 40px
+}
+.trending{
+  padding-bottom: 100px;
 }
