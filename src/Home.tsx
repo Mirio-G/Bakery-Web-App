@@ -20,6 +20,7 @@ import './style/card.css'
 // bootstrap
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import './style/card.css';
 
 import Navbar from "./components/navbar.tsx";
@@ -36,13 +37,16 @@ function home() {
         <Row className="banner p-4">
           <Container>
             <Row className = "top full-bleed">
-              <h1><i>ByteSized Bakery</i></h1>
-              <h2 className="d-none d-md-block">
-              Welcome to the ByteSized Bakery App! Here you can order different menu items and services. <br></br>Enjoy your stay!
-              </h2>
-              <div>
+            <Container>
+              <Row >
+                <Col>
                 <img src="./src/assets/logo.png" alt="Logo"></img>
-              </div>
+                </Col>
+                <Col>
+                  <br/><br/> <h1><i>ByteSized <br/>Bakery</i></h1>
+                </Col>
+              </Row>
+            </Container>
             </Row>
           </Container>
         </Row>

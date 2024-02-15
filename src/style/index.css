@@ -36,12 +36,12 @@ body {
 .banner{
   background-color: #301603;
   color: #ffffff;
-}
+} 
 
 h1 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 4em; 
-  line-height: 1.2;
+  font-size: 2em;
+  line-height: 2.0;
 }
 
 h2{
@@ -108,7 +108,7 @@ img#navlogo{
 }
 
 img{
-  width: 250px;
+  width: 130px;
   height: auto;
   margin-top:50px;
 }
