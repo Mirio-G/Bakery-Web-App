@@ -28,9 +28,9 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 100vw;
-  max-width: 100vw;
-  min-height: 100vh;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
 
 }
 .banner{
@@ -40,7 +40,7 @@ body {
 
 h1 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 4em;
+  font-size: 4em; 
   line-height: 1.2;
 }
 h2{
@@ -296,9 +296,5 @@ button:focus-visible {
   color: black;
 }
 .progress{
-  height: 40px;
-}
-
-.trending{
-  padding-bottom: 100px;
+  height: 40px
 }
