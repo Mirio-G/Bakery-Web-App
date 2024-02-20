@@ -46,6 +46,7 @@
     "breads": [
         {"type" : "Ciabatta",
             "description": "Ciabatta",
+            "img" : "./src/assets/Breads/ciabatta.jpg",
             "price": "9.99"
         },
         {"type" : "Bagel",
