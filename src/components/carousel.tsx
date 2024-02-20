@@ -22,7 +22,7 @@ const Carousel = ({ drinkdata, breaddata, breadItems, drinkItems}: CarouselProps
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     responsive: [
       {
         breakpoint: 1024,
@@ -44,8 +44,8 @@ const Carousel = ({ drinkdata, breaddata, breadItems, drinkItems}: CarouselProps
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 2,
+          slidesToScroll: 2,
         }
       }
     ]
