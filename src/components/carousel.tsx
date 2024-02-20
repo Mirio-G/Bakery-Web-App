@@ -10,17 +10,19 @@ import '../style/card.css'
 import Test from '/src/Test.tsx'
 
 interface CarouselProps {
-  imgSrc: string;
-  name: string;
+  drinkdata: string[];
+  breaddata: string[];
+  breadItems: any[];
+  drinkItems: any[];
 }
 
-const Carousel = ({ imgSrc, name }: CarouselProps) => {
+const Carousel = ({ drinkdata, breaddata, breadItems, drinkItems}: CarouselProps) => {
   let settings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     responsive: [
       {
         breakpoint: 1024,
@@ -42,8 +44,8 @@ const Carousel = ({ imgSrc, name }: CarouselProps) => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToShow: 2,
+          slidesToScroll: 2,
         }
       }
     ]
@@ -53,29 +55,34 @@ const Carousel = ({ imgSrc, name }: CarouselProps) => {
   return ( // container
     <Container>
       <Row>
-        <Slider {...settings}>
-          <div>
-            <Card imgSrc={imgSrc} name="Logo"/>
-          </div>
-        <div>
-            <Card imgSrc={imgSrc} name={name}/>
-          </div>
-          <div>
-            <Card/>
-          </div>
-          <div>
-            <Card/>
-          </div>
-          <div>
-            <Card/>
-          </div>
-          <div>
-            <Card/>
-          </div>
+      <Slider {...settings}> 
+      {drinkItems.map((drink, index) => {
+        const isSelected = drinkdata.includes(drink.type);
+        if (isSelected) {
+          return (
+            <div key={index}>
+              <Card type={drink.type} img={drink.img} description={drink.description} price={"9.99"}/>
+            </div>
+          );
+      }
+      return null;
+      })}
+
+      {breadItems.map((bread, index) => {
+        const isSelected = breaddata.includes(bread.type);
+        if (isSelected) {
+          return (
+            <div key={index}>
+              <Card type={bread.type}img={bread.img} description={bread.description} price={bread.price}/>
+            </div>
+          );
+      }
+      return null;
+      })}
+
+
         </Slider>
       </Row>
-
-      <div><Test /></div>
     </Container>
   )
 }

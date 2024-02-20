@@ -34,7 +34,7 @@ body {
 
 }
 .banner{
-  background-color: #301603;
+  background-color: #644117;
   color: #ffffff;
 } 
 
@@ -63,7 +63,7 @@ h2#makeRight{
   font-family: 'Times New Roman', Times, serif;
   margin-top:20px;
   float: inline-end;
-  padding-right: 50%;
+  padding-right: 40%;
 }
 
 h3#left{
@@ -105,10 +105,11 @@ img#navlogo{
   width: 60px;
   height: auto;
   margin-top: 0px;
+  align-items: center;
 }
 
 img{
-  width: 130px;
+  width: 160px;
   height: auto;
   margin-top:50px;
 }

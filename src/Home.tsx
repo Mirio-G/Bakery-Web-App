@@ -26,10 +26,38 @@ import './style/card.css';
 import Navbar from "./components/navbar.tsx";
 import Carousel from "./components/carousel.tsx";
 
-import jsonData from "../server/db.json"
+import axios from 'axios';
+
 
 function home() {
   const [count, setCount] = useState(0);
+
+  const drinks1 = ["House Milk Tea", "Jasmine Milk Tea", "Caramel Milk Tea"];
+  const breads1 = ["Ciabatta", "Bagel", "Focaccia"];
+
+
+  const drinks2 = ["Thai Milk Tea", "Hong Kong Milk Tea", "Matcha Milk Tea"];
+  const breads2 = ["English Muffin", "Flatbread", "Cornbread"];
+
+  const [breadItems, setBreadItems] = useState([]);
+    const [drinkItems, setDrinkItems] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const breadsResponse = await axios.get('http://localhost:5000/route/breads');
+                setBreadItems(breadsResponse.data);
+
+                const drinksResponse = await axios.get('http://localhost:5000/route/drinks');
+                setDrinkItems(drinksResponse.data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        };
+
+        fetchData();
+    }, []);
+
 
   return (
     
@@ -68,14 +96,14 @@ function home() {
         <Row className="p-4">
           <div>
             <h3 id="left">Deals</h3>
-            <Carousel data = {jsonData}/>
+            <Carousel drinkdata={drinks1} breaddata={breads1} breadItems ={breadItems} drinkItems ={drinkItems}/>
           </div>
         </Row>
 
         <Row className="p-4">
           <div className = "trending">
             <h3 id="left">Trending</h3>
-            <Carousel imgSrc="../src/assets/Breads/bagel.jpg" name="Bread"/>
+            <Carousel drinkdata={drinks2} breaddata={breads2} breadItems ={breadItems} drinkItems ={drinkItems}/>
           </div>
         </Row>
 
