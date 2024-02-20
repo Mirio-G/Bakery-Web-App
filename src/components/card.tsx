@@ -36,7 +36,7 @@ const Card = ({ imgSrc, name }: CardProps) => {
                 </Modal.Header>
                 
                 <Modal.Body>
-                    <PopupComponent />
+                    <PopupComponent imgSrc={imgSrc} name={name}/>
                 </Modal.Body>
                 
                 <Modal.Footer>

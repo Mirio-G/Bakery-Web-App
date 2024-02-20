@@ -20,10 +20,13 @@ import './style/card.css'
 // bootstrap
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import './style/card.css';
 
 import Navbar from "./components/navbar.tsx";
 import Carousel from "./components/carousel.tsx";
+
+import jsonData from "../server/db.json"
 
 function home() {
   const [count, setCount] = useState(0);
@@ -36,13 +39,16 @@ function home() {
         <Row className="banner p-4">
           <Container>
             <Row className = "top full-bleed">
-              <h1><i>ByteSized Bakery</i></h1>
-              <h2 className="d-none d-md-block">
-              Welcome to the ByteSized Bakery App! Here you can order different menu items and services. <br></br>Enjoy your stay!
-              </h2>
-              <div>
+            <Container>
+              <Row >
+                <Col>
                 <img src="./src/assets/logo.png" alt="Logo"></img>
-              </div>
+                </Col>
+                <Col>
+                  <br/><br/> <h1><i>ByteSized <br/>Bakery</i></h1>
+                </Col>
+              </Row>
+            </Container>
             </Row>
           </Container>
         </Row>
@@ -62,16 +68,17 @@ function home() {
         <Row className="p-4">
           <div>
             <h3 id="left">Deals</h3>
-            <Carousel />
+            <Carousel data = {jsonData}/>
           </div>
         </Row>
 
         <Row className="p-4">
           <div className = "trending">
             <h3 id="left">Trending</h3>
-            <Carousel />
+            <Carousel imgSrc="../src/assets/Breads/bagel.jpg" name="Bread"/>
           </div>
         </Row>
+
       </>
   )
 
