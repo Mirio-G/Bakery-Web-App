@@ -14,6 +14,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import PBar from './components/progress_bar.tsx'
 
+// styling
 import './style/App.css'
 import './style/card.css'
 
