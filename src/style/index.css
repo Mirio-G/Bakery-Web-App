@@ -147,6 +147,12 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+nav.d-lg-none.navbar.fixed-bottom.navbar-light.bg-light{
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #000000;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
