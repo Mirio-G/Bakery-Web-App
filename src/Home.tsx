@@ -26,6 +26,8 @@ import './style/card.css';
 import Navbar from "./components/navbar.tsx";
 import Carousel from "./components/carousel.tsx";
 
+import jsonData from "../server/db.json"
+
 function home() {
   const [count, setCount] = useState(0);
 
@@ -66,16 +68,17 @@ function home() {
         <Row className="p-4">
           <div>
             <h3 id="left">Deals</h3>
-            <Carousel />
+            <Carousel data = {jsonData}/>
           </div>
         </Row>
 
         <Row className="p-4">
           <div className = "trending">
             <h3 id="left">Trending</h3>
-            <Carousel />
+            <Carousel imgSrc="../src/assets/Breads/bagel.jpg" name="Bread"/>
           </div>
         </Row>
+
       </>
   )
 

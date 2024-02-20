@@ -9,7 +9,12 @@ import '../style/card.css'
 
 import Test from '/src/Test.tsx'
 
-const Carousel = () => {
+interface CarouselProps {
+  imgSrc: string;
+  name: string;
+}
+
+const Carousel = ({ imgSrc, name }: CarouselProps) => {
   let settings = {
     dots: true,
     infinite: true,
@@ -50,10 +55,10 @@ const Carousel = () => {
       <Row>
         <Slider {...settings}>
           <div>
-            <Card imgSrc="./src/assets/logo.png" name="Logo"/>
+            <Card imgSrc={imgSrc} name="Logo"/>
           </div>
         <div>
-            <Card imgSrc="./src/assets/Breads/bagel.jpg" name="Bagel"/>
+            <Card imgSrc={imgSrc} name={name}/>
           </div>
           <div>
             <Card/>
