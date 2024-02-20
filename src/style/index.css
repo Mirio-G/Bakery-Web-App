@@ -72,6 +72,33 @@ h3#left{
   text-align: left;
 }
 
+
+.cartImage{
+  border-style: solid;
+  /* border-left: 0px; */
+  border-spacing: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.cartText{
+  text-align: left;
+  padding-left:30px;
+}
+.cart{
+  border-style: solid;
+}
+.cart2{
+  border-style: solid;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+}
+h1#cartText{
+  font-size: 50px;
+}
+p#cartText{
+  font-size:50px;
+}
 span#makeLeft{
   font-size: 40px;
   font-family: 'Times New Roman', Times, serif;

@@ -79,6 +79,44 @@ function home() {
           </div>
         </Row>
 
+        <Container className="cart">
+          <Row className="cart2">
+            <h1 id="cartText">Cart</h1>
+          </Row><br></br>
+
+          <Row>
+          <Col className="cartImage">
+          <h1 id="cartText">Image</h1>
+          </Col>
+          <Col>
+          <p className="cartText">Name</p><br></br>
+          <p className="cartText">$$$</p><br></br>
+          <p className="cartText">Quantity</p><br></br>
+          </Col>
+          </Row> <br></br>
+
+          <Row>
+          <Col className="cartImage">
+          <h1 id="cartText">Image</h1>
+          </Col>
+          <Col>
+          <p className="cartText">Name</p><br></br>
+          <p className="cartText">$$$</p><br></br>
+          <p className="cartText">Quantity</p><br></br>
+          </Col>
+          </Row> <br></br>
+
+          <Row>
+          <Col className="cartImage">
+          <h1 id="cartText">Image</h1>
+          </Col>
+          <Col>
+          <p className="cartText">Name</p><br></br>
+          <p className="cartText">$$$</p><br></br>
+          <p className="cartText">Quantity</p><br></br>
+          </Col>
+          </Row> <br></br>
+        </Container>
       </>
   )
 
