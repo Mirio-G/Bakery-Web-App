@@ -2,11 +2,14 @@ import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 
 interface CardPopProps {
-    imgSrc: string;
-    name: string;
+    type: string;
+    topping: string[];
+    size: string[];
+    img: string;
+    description: string;
 }
 
-const CardPop = ({ imgSrc, name }: CardPopProps) => {
+const CardPop = ({ type,topping,size,img,description }: CardPopProps) => {
     return (
         <div className="card-pop-container">
         <form action="results.html" method="POST">
@@ -14,13 +17,13 @@ const CardPop = ({ imgSrc, name }: CardPopProps) => {
         
     
             <div className="card-pop-item">
-                <h5>{name}</h5>
+                <h5>{type}</h5>
               
             </div>
             <div className="card-pop-price">$$$$</div>
 
             <div className="card-pop-img-holder">
-                <img className="card-pop-img" src={imgSrc} alt="Logo"></img>
+                <img className="card-pop-img" src={img} alt="Logo"></img>
             </div>
 
             
@@ -35,7 +38,7 @@ const CardPop = ({ imgSrc, name }: CardPopProps) => {
                     </select>
                 </div>
 
-                <div className="card-pop-descrip">Description: </div>
+                <div className="card-pop-descrip">Description: {description}</div>
                 
         
                 <div className="card-pop-order"><button type="submit" value="Submit">ADD TO CART</button></div>
