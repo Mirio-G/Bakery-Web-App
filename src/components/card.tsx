@@ -7,11 +7,13 @@ import '../style/card.css';
 import PopupComponent from './card-pop.tsx';
 
 interface CardProps {
-    imgSrc: string;
-    name: string;
+    type: string;
+    img: string;
+    description: string;
+    price: string;
 }
 
-const Card = ({ imgSrc, name }: CardProps) => {
+const Card = ({ type,img,description,price }: CardProps) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -20,11 +22,11 @@ const Card = ({ imgSrc, name }: CardProps) => {
     return (
         <div className="card-container">
             <div className="card-img-holder">
-                <img className="card-img" src={imgSrc} alt="Logo" />
+                <img className="card-img" src={img} alt="Logo" />
             </div>
 
             <div>
-                <div className="card-item">{name}</div>
+                <div className="card-item">{type}</div>
                 <div className="card-order">
                     <a type="Button" onClick={handleShow}>Order Now</a>
                 </div>
@@ -36,7 +38,7 @@ const Card = ({ imgSrc, name }: CardProps) => {
                 </Modal.Header>
                 
                 <Modal.Body>
-                    <PopupComponent imgSrc={imgSrc} name={name}/>
+                    <PopupComponent type={type} img={img} description={description} price={price}/>
                 </Modal.Body>
                 
                 <Modal.Footer>
