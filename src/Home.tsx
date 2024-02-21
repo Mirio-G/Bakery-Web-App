@@ -63,7 +63,7 @@ function home() {
   return (
     
       <>
-        <Row className="d-lg-none p-4">
+        <Row className="d-lg-none">
           <Navbar />
         </Row>
 
