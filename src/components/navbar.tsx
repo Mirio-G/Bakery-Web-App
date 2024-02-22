@@ -11,9 +11,10 @@ function Navbar() {
                 </a>
             <a className="navbar-brand" href="#">
                 <img src="./src/assets/toplogo.png" alt="logo" id="navlogo"></img>
-            </a>
+                </a>
             <a className="nav-item nav-link" href="#">
-                <h2 id = "makeRight"><i><b>Checkout</b></i></h2></a>
+                <h2 id = "makeRight"><i><b>Checkout</b></i></h2>
+                </a>
             </nav>
         </div>
     );
