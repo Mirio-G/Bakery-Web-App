@@ -5,6 +5,7 @@ import socketIO from 'socket.io-client';
 
 import App from './Home.tsx';
 import ChatPage from "./components/chat/ChatPage.tsx";
+import Checkout from "./checkout.tsx";
 
 const socket = socketIO.connect('');
 
@@ -16,7 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       {/*<App />*/}
       <Routes>
         <Route path="/" element={<App socket={socket} />}></Route>
-        <Route path="/chat" element={<ChatPage socket={socket} />}></Route>
+        <Route path="/Checkout" element={<Checkout />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
