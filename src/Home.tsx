@@ -27,8 +27,9 @@ import './style/card.css';
 import Navbar from "./components/navbar.tsx";
 import Carousel from "./components/carousel.tsx";
 
+import jsonData from "../server/db.json"
+import Checkout from "./checkout.tsx"
 import axios from 'axios';
-
 
 function home() {
   const [count, setCount] = useState(0);
@@ -111,6 +112,7 @@ function home() {
 
         
 
+        <Row><Checkout></Checkout></Row>
       </>
 
   )
