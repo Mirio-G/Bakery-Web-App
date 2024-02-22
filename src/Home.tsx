@@ -63,49 +63,49 @@ function home() {
   return (
     
       <>
-        <Navbar />
+        <Row className="d-lg-none">
+          <Navbar />
+        </Row>
 
-        <Row className="banner p-4">
+        <Row className="banner p-4 top full-bleed">
           <Container>
-            <Row className = "top full-bleed">
-            <Container>
-              <Row >
-                <Col>
-                <img src="./src/assets/logo.png" alt="Logo"></img>
-                </Col>
-                <Col>
-                  <br/><br/> <h1><i>ByteSized <br/>Bakery</i></h1>
-                </Col>
-              </Row>
-            </Container>
+            <Row >
+              <Col>
+              <img src="./src/assets/logo.png" alt="Logo"></img>
+              </Col>
+              <Col>
+                <br/><br/> <h1><i>ByteSized <br/>Bakery</i></h1>
+              </Col>
             </Row>
           </Container>
         </Row>
-            <Row>
-              <div className = "points">
-                <span id = "makeLeft">My points</span> <span id = "makeRight">0 pts</span>
-              </div>
 
-              <div>
+        <Row className="p-4">
+          <Container className="home__container">
+              <Row className="p-4">
+                <div className = "points">
+                  <span id = "makeLeft">My points</span> <span id = "makeRight">0 pts</span>
+                </div>
+
+                <div>
                 <PBar/>
               </div>
             </Row>
-          
 
+            <Row className="p-4">
+              <div>
+                <h3 id="left">Deals</h3>
+                <Carousel drinkdata={drinks1} breaddata={breads1} breadItems ={breadItems} drinkItems ={drinkItems}/>
+              </div>
+            </Row>
 
-
-        <Row className="p-4">
-          <div>
-            <h3 id="left">Deals</h3>
-            <Carousel drinkdata={drinks1} breaddata={breads1} breadItems ={breadItems} drinkItems ={drinkItems}/>
-          </div>
-        </Row>
-
-        <Row className="p-4">
-          <div className = "trending">
-            <h3 id="left">Trending</h3>
-            <Carousel drinkdata={drinks2} breaddata={breads2} breadItems ={breadItems} drinkItems ={drinkItems}/>
-          </div>
+            <Row className="p-4">
+              <div className = "trending">
+                <h3 id="left">Trending</h3>
+                <Carousel drinkdata={drinks2} breaddata={breads2} breadItems ={breadItems} drinkItems ={drinkItems}/>
+              </div>
+            </Row>
+          </Container>
         </Row>
 
       </>
