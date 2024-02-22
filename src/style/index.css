@@ -54,17 +54,17 @@ h2{
 h2#makeLeft{
   font-size: 25px;
   font-family: 'Times New Roman', Times, serif;
-  margin-top:20px;
+  margin-top:15%;
   float: inline-start;
-  padding-left: 75%;
+  padding-left: 90%;
 }
 
 h2#makeRight{
   font-size: 25px;
   font-family: 'Times New Roman', Times, serif;
-  margin-top:20px;
+  margin-top:15%;
   float: inline-end;
-  padding-right: 40%;
+  padding-right: 35%;
 }
 
 h3#left{
@@ -166,7 +166,7 @@ button:focus-visible {
   padding: 10px;
 }
 .navbar-brand {
-  margin-right: 0px;
+  margin-left: 13%;
 }
 .navbar {
   color: black;
