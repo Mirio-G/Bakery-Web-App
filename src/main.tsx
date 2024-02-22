@@ -14,11 +14,10 @@ import './style/index.css'
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
-      {/*<App />*/}
       <Routes>
         <Route path="/" element={<App socket={socket} />}></Route>
         <Route path="/Checkout" element={<Checkout />} />
       </Routes>
     </BrowserRouter>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
