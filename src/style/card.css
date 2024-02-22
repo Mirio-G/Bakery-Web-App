@@ -104,6 +104,9 @@
     float: right;
     line-height: 200%;
     vertical-align: middle;
+    border-radius: 7px;
+    
+
 }
 .card-pop-add{
     background-color: #cfcfcf;
