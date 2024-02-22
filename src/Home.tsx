@@ -14,6 +14,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import PBar from './components/progress_bar.tsx'
 
+// styling
 import './style/App.css'
 import './style/card.css'
 
@@ -27,6 +28,7 @@ import Navbar from "./components/navbar.tsx";
 import Carousel from "./components/carousel.tsx";
 
 import jsonData from "../server/db.json"
+import Checkout from "./checkout.tsx"
 
 function home() {
   const [count, setCount] = useState(0);
@@ -79,44 +81,7 @@ function home() {
           </div>
         </Row>
 
-        <Container className="cart">
-          <Row className="cart2">
-            <h1 id="cartText">Cart</h1>
-          </Row><br></br>
-
-          <Row>
-          <Col className="cartImage">
-          <h1 id="cartText">Image</h1>
-          </Col>
-          <Col>
-          <p className="cartText">Name</p><br></br>
-          <p className="cartText">$$$</p><br></br>
-          <p className="cartText">Quantity</p><br></br>
-          </Col>
-          </Row> <br></br>
-
-          <Row>
-          <Col className="cartImage">
-          <h1 id="cartText">Image</h1>
-          </Col>
-          <Col>
-          <p className="cartText">Name</p><br></br>
-          <p className="cartText">$$$</p><br></br>
-          <p className="cartText">Quantity</p><br></br>
-          </Col>
-          </Row> <br></br>
-
-          <Row>
-          <Col className="cartImage">
-          <h1 id="cartText">Image</h1>
-          </Col>
-          <Col>
-          <p className="cartText">Name</p><br></br>
-          <p className="cartText">$$$</p><br></br>
-          <p className="cartText">Quantity</p><br></br>
-          </Col>
-          </Row> <br></br>
-        </Container>
+        <Row><Checkout></Checkout></Row>
       </>
   )
 
