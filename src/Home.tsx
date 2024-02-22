@@ -108,13 +108,8 @@ function home() {
           </Container>
         </Row>
 
-
-        
-
       </>
-
   )
-
 }
 
 export default home

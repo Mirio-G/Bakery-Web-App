@@ -18,7 +18,7 @@ function Checkout() {
 
   return (
     <>
-      
+      <p>Testing</p>
     </>
   )
 }

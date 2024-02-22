@@ -45,9 +45,3 @@
 .h3{
   font-size: 30px
 }
-
-.home_container {
-  @media (min-width: 1280px) {
-    width: 70%;
-  }
-}
