@@ -5,7 +5,7 @@ import socketIO from 'socket.io-client';
 
 import App from './Home.tsx';
 import ChatPage from "./components/chat/ChatPage.tsx";
-import Checkout from "./checkout.tsx";
+import Checkout from "./components/checkout.tsx";
 
 const socket = socketIO.connect('');
 

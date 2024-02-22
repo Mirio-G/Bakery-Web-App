@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from 'react-slick';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import '../carousel-item.css'
+import '../style/carousel-item.css'
 import Card from '../components/card.tsx'
 import '../style/card.css'
 
