@@ -109,7 +109,6 @@ function home() {
           </Container>
         </Row>
         
-        <Row><Checkout></Checkout></Row>
       </>
   )
 }
