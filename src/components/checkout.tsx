@@ -26,7 +26,7 @@ import Col from 'react-bootstrap/Col';
 
 function Checkout() {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: 'AIzaSyB6L6LjAXQsW91VhK9rcMlLGCoyW6VKbSA',
+    googleMapsApiKey: '',
   });
 
   const center = useMemo(() => ({ lat: 32.6324335, lng: -97.1017739 }), []);
