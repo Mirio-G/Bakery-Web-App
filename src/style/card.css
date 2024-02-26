@@ -2,41 +2,49 @@
     font-family: "Times New Roman", Times, serif;
     background-color: #ffffff;
     color: hsl(0, 0%, 0%);
-    max-height: 26em;
-    max-width: 24em;
-    border: 2px solid #000000;
+    min-height: 14em;
+    max-height: 14em;
+    max-width: 20em;
+    border: 2px solid hsl(0, 0%, 0%);
     padding: .5em;
     margin: .5em; 
+    
 }
 .card-img-holder{
     background-color: #d9d9d9;
     max-width: 95%;
-    max-height: 20em;
+    min-width: 95%;
+
+    min-height: 40%;
+    max-height: 40%;
+    
     padding: auto;
-    margin-left: 2.5%;
-    margin-right: 2.5%;
     margin-top: auto;
     margin-bottom: auto;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 .card-img{
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
     padding: 2%;
     margin-left: auto;
     margin-right: auto;
     display: block;
-    max-height: 70%;
-    max-width: 70%;
+    max-height: 6em;
+    min-height: 8em;
+    min-width: 6em;
+    max-width: 8em;
 }
+
 .card-item{
-    padding-left: 10%;
-    text-align: left;
     font-size: 1.25em;
-    float: left;
+    text-align:center;
+
+
 }
 .card-order{
-    padding-right: 10%;
-    text-align: right;
+    text-align: center;
     font-size: 1.25em;
 }
 
