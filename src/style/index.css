@@ -257,7 +257,16 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+    border: 1px solid #000000;
+    font-family: 'Times New Roman', Times, serif;
+  } 
+  button#add-to-cart {
+    background-color: #f9f9f9;
+    border: 1px solid #000000;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
   }
+
 }
 
 .nav-link {
@@ -279,7 +288,6 @@ button:focus-visible {
 .trending{
   padding-bottom: 100px;
 }
-
 .home__container {
   width : 70%;
 
