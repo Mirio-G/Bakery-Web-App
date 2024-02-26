@@ -100,51 +100,6 @@ function Checkout() {
           </Row>
 
         </Container><br></br>
-
-        <Container className = "Payment">
-        <Row className="Payment2">
-            <h1 id="payText">Payment</h1>
-          </Row><br></br>
-          <Row>
-          <Col>
-          <h1 id="payment">Filler Text</h1>
-          </Col>
-          </Row>
-        </Container>
-
-        <Container className = "Location">
-          <Row className="Location2">
-            <h1 id="LocationText">Delivery Location</h1>
-          </Row><br></br>
-          <Row className="Google_Map">
-            {!isLoaded ? (
-              <h1>Loading...</h1>
-            ) : (
-              <GoogleMap
-                mapContainerClassName="map-container"
-                center={center}
-                zoom={10}
-              />
-            )}
-          </Row>
-        </Container>
-
-        <Container className = "Contact">
-          <Row className="Contact2">
-            <h1 id="ContactText">Contact Info</h1>
-          </Row><br></br>
-          <Row>
-            <Col>
-              <h1 id="contact">Filler Text</h1>
-            </Col>
-          </Row>
-        </Container>
-
-        <Container className = "Order">
-          <Row>
-            <h1 id="placeorder">Place Order</h1>
-          </Row>
-        </Container>
     </>
   )
 }
