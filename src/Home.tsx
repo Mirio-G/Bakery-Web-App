@@ -29,6 +29,7 @@ import Carousel from "./components/carousel.tsx";
 
 import jsonData from "../server/db.json"
 import Checkout from "./checkout.tsx"
+import Payment from "./payment.tsx"
 
 function home() {
   const [count, setCount] = useState(0);
@@ -82,6 +83,7 @@ function home() {
         </Row>
 
         <Row><Checkout></Checkout></Row>
+        <Row><Payment></Payment></Row>
       </>
   )
 
