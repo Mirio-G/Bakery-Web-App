@@ -12,11 +12,6 @@ import Create from "./components/create.tsx";
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './style/App.css'
-
-// styling
-import './style/App.css'
-import './style/card.css'
 
 // bootstrap
 import Container from 'react-bootstrap/Container';
