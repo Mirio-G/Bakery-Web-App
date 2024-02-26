@@ -104,23 +104,6 @@ function home() {
           </Row>
         </Container>
       </Row>
-
-      <Row className="p-4">
-        <div>
-          <h3 id="left">Deals</h3>
-          <Carousel data = {jsonData}/>
-        </div>
-      </Row>
-
-      <Row className="p-4">
-        <div className = "trending">
-          <h3 id="left">Trending</h3>
-          <Carousel imgSrc="../src/assets/Breads/bagel.jpg" name="Bread"/>
-        </div>
-      </Row>
-
-      <Row><Checkout></Checkout></Row>
-      <Row><Payment></Payment></Row>
     </>
   )
 }
