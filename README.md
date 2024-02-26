@@ -55,3 +55,16 @@ npm run dev
 http://localhost:5173/
 ```
 
+
+### Git branch command
+
+```
+git fetch origin
+git pull
+
+git branch {Branch name}
+git checkout {Branch name}
+git commit -m "Message"
+git push
+```
+

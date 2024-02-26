@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Slider from 'react-slick';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import '../carousel-item.css'
+import '../style/carousel-item.css'
 import Card from '../components/card.tsx'
 import '../style/card.css'
 
@@ -20,7 +20,7 @@ const Carousel = ({ drinkdata, breaddata, breadItems, drinkItems}: CarouselProps
   let settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 400,
     slidesToShow: 3,
     slidesToScroll: 2,
     responsive: [
@@ -36,6 +36,7 @@ const Carousel = ({ drinkdata, breaddata, breadItems, drinkItems}: CarouselProps
       {
         breakpoint: 600,
         settings: {
+          arrows: false,
           slidesToShow: 2,
           slidesToScroll: 2,
           initialSlide: 2
@@ -44,6 +45,7 @@ const Carousel = ({ drinkdata, breaddata, breadItems, drinkItems}: CarouselProps
       {
         breakpoint: 480,
         settings: {
+          arrows: false,
           slidesToShow: 2,
           slidesToScroll: 2,
         }
