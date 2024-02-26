@@ -41,8 +41,9 @@ body {
 
 h1 {
   font-family: 'Times New Roman', Times, serif;
-  font-size: 2em;
-  line-height: 1.5;
+  font-size: 250%;
+  line-height: 1.8;
+  padding-top: 5%
 }
 
 h2{
@@ -209,7 +210,7 @@ img#navlogo{
 }
 
 img{
-  width: 160px;
+  width: 155px;
   height: auto;
   margin-top:15px;
 }
