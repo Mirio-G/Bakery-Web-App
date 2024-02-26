@@ -13,7 +13,7 @@ import Create from "./components/create.tsx";
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
+//import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
 
 // styling
 import '../style/App.css'
