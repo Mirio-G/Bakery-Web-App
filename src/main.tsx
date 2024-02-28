@@ -6,8 +6,6 @@ import App from './Home.tsx';
 import ChatPage from "./components/chat/ChatPage.tsx";
 import Checkout from "./components/checkout.tsx";
 
-const socket = socketIO.connect('');
-
 import './style/index.css'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
