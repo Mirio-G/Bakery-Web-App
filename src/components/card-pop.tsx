@@ -7,11 +7,12 @@ interface CardPopProps {
     size: string[];
     img: string;
     description: string;
+    price: string;
 }
 
 
 
-const CardPop = ({ type,topping,size,img,description }: CardPopProps) => {
+const CardPop = ({ type,topping,size,img,description, price }: CardPopProps) => {
     const [quantity, setQuantity] = useState(0);
 
     const increment = () => {
@@ -34,7 +35,7 @@ const CardPop = ({ type,topping,size,img,description }: CardPopProps) => {
                 <h5>{type}</h5>
               
             </div>
-            <div className="card-pop-price">$$$$</div>
+            <div className="card-pop-price">${price}</div>
 
             <div className="card-pop-img-holder">
                 <img className="card-pop-img" src={img} alt="Logo"></img>
