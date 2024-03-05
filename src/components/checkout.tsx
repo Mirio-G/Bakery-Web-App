@@ -39,9 +39,9 @@ function Checkout() {
           <h1 id="cartText">Image</h1>
           </Col>
           <Col>
-          <p className="cartText">Name</p><br></br>
-          <p className="cartText">$$$</p><br></br>
-          <p className="cartText">Quantity</p><br></br>
+          <p className="cartText">Name</p>
+          <p className="cartText">$$$</p>
+          <p className="cartText">Quantity</p>
           </Col>
           </Row> <br></br>
 
@@ -50,9 +50,9 @@ function Checkout() {
           <h1 id="cartText">Image</h1>
           </Col>
           <Col>
-          <p className="cartText">Name</p><br></br>
-          <p className="cartText">$$$</p><br></br>
-          <p className="cartText">Quantity</p><br></br>
+          <p className="cartText">Name</p>
+          <p className="cartText">$$$</p>
+          <p className="cartText">Quantity</p>
           </Col>
           </Row> <br></br>
 
@@ -61,9 +61,9 @@ function Checkout() {
           <h1 id="cartText">Image</h1>
           </Col>
           <Col>
-          <p className="cartText">Name</p><br></br>
-          <p className="cartText">$$$</p><br></br>
-          <p className="cartText">Quantity</p><br></br>
+          <p className="cartText">Name</p>
+          <p className="cartText">$$$</p>
+          <p className="cartText">Quantity</p>
           </Col>
           </Row> <br></br>
         </Container>
@@ -97,6 +97,12 @@ function Checkout() {
           </Row>
 
         </Container><br></br>
+
+        <Container className = "Order">
+          <Row>
+            <h1 id="placeorder">Continue to Payment</h1>
+          </Row>
+        </Container>
 
         <Navbar />
     </>
