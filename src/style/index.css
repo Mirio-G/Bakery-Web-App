@@ -192,6 +192,10 @@ span#makeLeft{
   padding-bottom: 2%;
 }
 
+span#makeCenter{
+  padding-left: 30%;
+}
+
 span#makeRight{
   font-size: 40px;
   font-family: 'Times New Roman', Times, serif;
