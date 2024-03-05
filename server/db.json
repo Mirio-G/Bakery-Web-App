@@ -46,7 +46,7 @@
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/Matcha_Milk_Tea.jpg",
-            "description" : "Japanese green tea powder, hot water, and milk",
+            "description" : "Japanese green tea, hot water, and milk",
             "price": "8.99"
         }
     ],
