@@ -105,9 +105,11 @@ h5{
     margin: 2%;
     float: left;
     line-height: normal; 
-    border-radius: 12%;
+    border-radius: 20% / 50%;
     display: flex;
     align-items: center; 
+    height: 20%;
+    width: 50%;
 }
 .card-pop-custom {
     background-color: #cfcfcf;
@@ -125,12 +127,13 @@ h5{
     align-items: center; 
 }
 
-.button#plus{
+button#plus{
     background-color: #cfcfcf;
     float: right;
+    padding-left: 35%;
 }
 
-.button#minus{
+button#minus{
     background-color: #cfcfcf;
     float: left;
 }
@@ -154,6 +157,14 @@ h5{
 }
 .card-pop-order{
     text-align: center;
+}
+
+button#add-to-cart {
+    background-color: #cfcfcf;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 20%;
+    border-radius: 50% / 0%;
 }
 
 .Google_Map {

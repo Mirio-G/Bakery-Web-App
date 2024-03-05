@@ -41,9 +41,9 @@ const CardPop = ({ type,topping,size,img,description }: CardPopProps) => {
             </div>
 
             <div className="card-pop-quantity">
-                <button id="makeLeft" onClick={decrement}>-</button>
-                <span>{quantity}</span>
-                <button id="makeRight" onClick={increment}>+</button>
+                <button id="minus" onClick={decrement}>-</button>
+                <span id = "makeCenter">{quantity}</span>
+                <button id="plus" onClick={increment}>+</button>
             </div>
 
                 <div>
@@ -58,7 +58,7 @@ const CardPop = ({ type,topping,size,img,description }: CardPopProps) => {
                 <div className="card-pop-descrip">Description: {description}</div>
                 
         
-                <div className="card-pop-order"><button type="submit" value="Submit">ADD TO CART</button></div>
+                <div className="card-pop-order"><button id="add-to-cart" type="submit" value="Submit">ADD TO CART</button></div>
 
     
         </div>
