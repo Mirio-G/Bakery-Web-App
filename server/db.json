@@ -1,100 +1,100 @@
 {
     "drinks": [
-        {
-            "type" : "House Milk Tea",
+        {"type" : "House Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size": ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/House_Milk_Tea.webp",
-            "description": "House Milk tea"
+            "description": "Sweet black tea with a creamy finish and brown sugar drizzle on the sides",
+            "price": "4.99"
         },
-        {
-            "type" : "Jasmine Milk Tea",
+        {"type" : "Jasmine Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/Jasmine_Milk_Tea.webp",
-            "description" : ""
+            "description" :  "Floral green milk tea is made with milk, and simple syrup",
+            "price": "5.99"
         },
-        {
-            "type" : "Caramel Milk Tea",
+        {"type" : "Caramel Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/Caramel_Milk_Tea.jpg",
-            "description" : ""
+            "description" : "Rich, slightly sweet, caramaelly",
+            "price": "10.99"
         },
-        {
-            "type" : "Taro Milk Tea",
+        {"type" : "Taro Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/Taro_Milk_Tea.jpg",
-            "description" : ""
+            "description" : "Taro, green tea, and milk creamer",
+            "price": "12.99"
         },
-        {
-            "type" : "Thai Milk Tea",
+        {"type" : "Thai Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/Thai_Milk_Tea.jpg",
-            "description" : ""
+            "description" : "Creamy and refreshing mildly spiced sweet tea made from tea mix, milk, and sugar",
+            "price": "9.99"
         },
-        {
-            "type" : "Hong Kong Milk Tea",
+        {"type" : "Hong Kong Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/Hong_Kong_Milk_Tea.jpg",
-            "description" : ""
+            "description" : "Heavily oxidised blended black tea leaves and evaporated milk",
+            "price": "7.99"
         },
-        {
-            "type" : "Matcha Milk Tea",
+        {"type" : "Matcha Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
-            "img" : "./src/assets/Drinks/Match_Milk_Tea.jpg",
-            "description" : ""
+            "img" : "./src/assets/Drinks/Matcha_Milk_Tea.jpg",
+            "description" : "Japanese green tea, hot water, and milk",
+            "price": "8.99"
         }
     ],
     "breads": [
         {"type" : "Ciabatta",
-            "description": "Ciabatta",
+            "description": "Bread grilled, drizzled with olive oil then rubbed with garlic",
             "img" : "./src/assets/Breads/ciabatta.jpg",
-            "price": "9.99"
+            "price": "7.99"
         },
         {"type" : "Bagel",
-            "description" : "Bagel",
+            "description" : "Doughnut-shaped roll with crisp, shiny crust and a dense interior",
             "img" : "./src/assets/Breads/bagel.jpg",
             "price": "9.99"
         },
         {"type" : "Focaccia",
-            "description" : "Focaccia",
+            "description" : "Italian flatbread that can be either sweet or savoury",
             "img" : "./src/assets/Breads/focaccia.jpg",
-            "price": "9.99"
+            "price": "8.99"
         },
         {"type" : "Sourdough",
-            "description" : "Sourdough",
+            "description" : "Sour, acidic flavor and extra chewy texture",
             "img" : "./src/assets/Breads/sourdough.jpg",
-            "price": "9.99"
+            "price": "10.99"
         },
         {"type" : "Naan",
-            "description" : "Naan",
+            "description" : "Single-layer bread with a light and slightly fluffy texture",
             "img" : "./src/assets/Breads/naan.jpg",
-            "price": "9.99"
+            "price": "6.99"
         },
         {"type" : "Brioche",
-            "description" : "Brioche",
+            "description" : "Soft, lightly sweet, rich bread",
             "img" : "./src/assets/Breads/brioche.jpg",
             "price": "9.99"
         },
         {"type" : "English Muffin",
-            "description" : "English Muffin",
+            "description" : "Small, round and flat yeast-leavened bread",
             "img" : "./src/assets/Breads/English_Muffin.jpg",
-            "price": "9.99"
+            "price": "7.99"
         },
         {"type" : "Flatbread",
-            "description" : "Flatbread",
+            "description" : "Created with flour, water, milk, yogurt, and salt",
             "img" : "./src/assets/Breads/flatbread.jpg",
             "price": "9.99"
         },
         {"type" : "Cornbread",
-            "description" : "Cornbread",
+            "description" : "Rich corn flavor that shines and is a bit crumbly",
             "img" : "./src/assets/Breads/cornbread.jpg",
-            "price": "9.99"
+            "price": "10.99"
         }
     ]
 }
