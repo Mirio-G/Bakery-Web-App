@@ -1,42 +1,49 @@
 {
     "drinks": [
-        {"type" : "House Milk Tea",
+        {
+            "type" : "House Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size": ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/House_Milk_Tea.webp",
             "description": "House Milk tea"
         },
-        {"type" : "Jasmine Milk Tea",
+        {
+            "type" : "Jasmine Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/Jasmine_Milk_Tea.webp",
             "description" : ""
         },
-        {"type" : "Caramel Milk Tea",
+        {
+            "type" : "Caramel Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/Caramel_Milk_Tea.jpg",
             "description" : ""
         },
-        {"type" : "Taro Milk Tea",
+        {
+            "type" : "Taro Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/Taro_Milk_Tea.jpg",
             "description" : ""
         },
-        {"type" : "Thai Milk Tea",
+        {
+            "type" : "Thai Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/Thai_Milk_Tea.jpg",
             "description" : ""
         },
-        {"type" : "Hong Kong Milk Tea",
+        {
+            "type" : "Hong Kong Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/Hong_Kong_Milk_Tea.jpg",
             "description" : ""
         },
-        {"type" : "Matcha Milk Tea",
+        {
+            "type" : "Matcha Milk Tea",
             "topping" : ["Boba", "Aloe Vera", "Lycee", "Jelly", "None"],
             "size" : ["small", "medium", "large"],
             "img" : "./src/assets/Drinks/Match_Milk_Tea.jpg",

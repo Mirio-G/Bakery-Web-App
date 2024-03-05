@@ -22,9 +22,9 @@ import './style/card.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import './style/card.css';
 
 import jsonData from "../server/db.json"
+import Payment from "./components/payment.tsx"
 import axios from 'axios';
 
 function home() {
@@ -38,7 +38,7 @@ function home() {
   const breads2 = ["English Muffin", "Flatbread", "Cornbread"];
 
   const [breadItems, setBreadItems] = useState([]);
-    const [drinkItems, setDrinkItems] = useState([]);
+  const [drinkItems, setDrinkItems] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -56,7 +56,6 @@ function home() {
         fetchData();
     }, []);
 
-
   return (
     
     <>
@@ -71,7 +70,7 @@ function home() {
             <img src="./src/assets/logo.png" alt="Logo"></img>
             </Col>
             <Col>
-              <br/><br/> <h1><i>ByteSized <br/>Bakery</i></h1>
+              <h1 ><i>ByteSized <br/>Bakery</i></h1>
             </Col>
           </Row>
         </Container>
@@ -104,7 +103,6 @@ function home() {
           </Row>
         </Container>
       </Row>
-
     </>
   )
 }

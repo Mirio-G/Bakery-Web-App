@@ -5,15 +5,11 @@ import { useMemo } from "react";
 import { Route, Routes } from "react-router-dom";
 
  // We import all the components we need in our app
-import Navbar from "./components/navbar.tsx";
-import RecordList from "./components/recordList.tsx";
-import Edit from "./components/edit.tsx";
-import Create from "./components/create.tsx";
+import Navbar from "./navbar.tsx";
 
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-//import { GoogleMap, useLoadScript, Marker } from '@react-google-maps/api';
 
 // styling
 import '../style/App.css'
@@ -25,9 +21,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function Checkout() {
-  const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: '',
-  });
+  // const { isLoaded, loadError } = useLoadScript({
+  //   googleMapsApiKey: '',
+  // });
 
   const center = useMemo(() => ({ lat: 32.6324335, lng: -97.1017739 }), []);
 
@@ -43,9 +39,9 @@ function Checkout() {
           <h1 id="cartText">Image</h1>
           </Col>
           <Col>
-          <p className="cartText">Name</p><br></br>
-          <p className="cartText">$$$</p><br></br>
-          <p className="cartText">Quantity</p><br></br>
+          <p className="cartText">Name</p>
+          <p className="cartText">$$$</p>
+          <p className="cartText">Quantity</p>
           </Col>
           </Row> <br></br>
 
@@ -54,9 +50,9 @@ function Checkout() {
           <h1 id="cartText">Image</h1>
           </Col>
           <Col>
-          <p className="cartText">Name</p><br></br>
-          <p className="cartText">$$$</p><br></br>
-          <p className="cartText">Quantity</p><br></br>
+          <p className="cartText">Name</p>
+          <p className="cartText">$$$</p>
+          <p className="cartText">Quantity</p>
           </Col>
           </Row> <br></br>
 
@@ -65,9 +61,9 @@ function Checkout() {
           <h1 id="cartText">Image</h1>
           </Col>
           <Col>
-          <p className="cartText">Name</p><br></br>
-          <p className="cartText">$$$</p><br></br>
-          <p className="cartText">Quantity</p><br></br>
+          <p className="cartText">Name</p>
+          <p className="cartText">$$$</p>
+          <p className="cartText">Quantity</p>
           </Col>
           </Row> <br></br>
         </Container>
@@ -102,50 +98,13 @@ function Checkout() {
 
         </Container><br></br>
 
-        <Container className = "Payment">
-        <Row className="Payment2">
-            <h1 id="payText">Payment</h1>
-          </Row><br></br>
-          <Row>
-          <Col>
-          <h1 id="payment">Filler Text</h1>
-          </Col>
-          </Row>
-        </Container>
-
-        <Container className = "Location">
-          <Row className="Location2">
-            <h1 id="LocationText">Delivery Location</h1>
-          </Row><br></br>
-          <Row className="Google_Map">
-            {!isLoaded ? (
-              <h1>Loading...</h1>
-            ) : (
-              <GoogleMap
-                mapContainerClassName="map-container"
-                center={center}
-                zoom={10}
-              />
-            )}
-          </Row>
-        </Container>
-
-        <Container className = "Contact">
-          <Row className="Contact2">
-            <h1 id="ContactText">Contact Info</h1>
-          </Row><br></br>
-          <Row>
-            <Col>
-              <h1 id="contact">Filler Text</h1>
-            </Col>
-          </Row>
-        </Container>
-
         <Container className = "Order">
           <Row>
-            <h1 id="placeorder">Place Order</h1>
+            <h1 id="placeorder">Continue to Payment</h1>
           </Row>
         </Container>
+
+        <Navbar />
     </>
   )
 }
