@@ -80,26 +80,32 @@ h3#left{
   border-style: solid;
   margin-left: 5%;
   margin-right: 5%;
+  margin-bottom: 10%;
+  margin-top: 5%;
   border-spacing: 10px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top:20px;
+  border-radius:10px;
 }
 .cartText{
   text-align: left;
-  padding-left:30px;
+  padding-left:15px;
+  padding-top: 10%;
+  margin-bottom:10%;
 }
 .cart{
   border-style: solid;
-  border-width:4px;
+  border-width:3px;
   width:95%;
   height:95%;
+  border-radius:10px;
+  margin-top:10%;
 }
 .cart2{
   border-style: solid;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  border-width:4px;
+  border-width:3px;
 }
 h1#cartText{
   font-size: 50px;
@@ -109,15 +115,16 @@ p#cartText{
 }
 .Pay{
   border-style:solid;
-  border-top:0px;
-  border-width:4px;
+  border-width:3px;
   width:95%;
   height:95%;
+  border-radius: 10px;
+  margin-top:7%;
 }
 .Payment{
   margin-top:50px;
   border-style:solid;
-  border-width:4px;
+  border-width:3px;
   width:95%;
   height:95%;
 }
@@ -126,7 +133,7 @@ p#cartText{
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  border-width:4px;
+  border-width:3px;
   margin-bottom:15%;
   
 }
@@ -136,7 +143,7 @@ h1#payText{
 .Location{
   margin-top:50px;
   border-style:solid;
-  border-width:4px;
+  border-width:3px;
   width:95%;
   height:95%;
 }
@@ -145,7 +152,7 @@ h1#payText{
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  border-width:4px;
+  border-width:3px;
   margin-bottom:15%;
 }
 h1#LocationText{
@@ -154,7 +161,7 @@ h1#LocationText{
 .Contact{
   margin-top:50px;
   border-style:solid;
-  border-width:4px;
+  border-width:3px;
   width:95%;
   height:95%;
 }
@@ -163,18 +170,19 @@ h1#LocationText{
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
-  border-width:4px;
+  border-width:3px;
   margin-bottom:15%;
 }
 h1#ContactText{
   font-size: 250%;
 }
 .Order{
-  margin-top:50px;
   background-color:#969696;
   width:95%;
   height:95%;
-  margin-bottom:20%;
+  margin-bottom:27%;
+  border-radius:10px;
+  padding-bottom:3%;
 }
 span#makeLeft{
   font-size: 40px;
