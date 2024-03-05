@@ -53,7 +53,6 @@ const Carousel = ({ drinkdata, breaddata, breadItems, drinkItems}: CarouselProps
     ]
   };
 
-
   return ( // container
     <Container>
       <Row>
@@ -63,7 +62,7 @@ const Carousel = ({ drinkdata, breaddata, breadItems, drinkItems}: CarouselProps
         if (isSelected) {
           return (
             <div key={index}>
-              <Card type={drink.type} img={drink.img} description={drink.description} price={"9.99"}/>
+              <Card type={drink.type} img={drink.img} topping={drink.topping} description={drink.description} price={"9.99"}/>
             </div>
           );
       }
@@ -75,7 +74,7 @@ const Carousel = ({ drinkdata, breaddata, breadItems, drinkItems}: CarouselProps
         if (isSelected) {
           return (
             <div key={index}>
-              <Card type={bread.type}img={bread.img} description={bread.description} price={bread.price}/>
+              <Card type={bread.type}img={bread.img}  description={bread.description} price={bread.price}/>
             </div>
           );
       }
