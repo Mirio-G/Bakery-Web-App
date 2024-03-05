@@ -5,10 +5,7 @@ import { useMemo } from "react";
 import { Route, Routes } from "react-router-dom";
 
  // We import all the components we need in our app
-import Navbar from "./components/navbar.tsx";
-import RecordList from "./components/recordList.tsx";
-import Edit from "./components/edit.tsx";
-import Create from "./components/create.tsx";
+import Navbar from "./navbar.tsx";
 
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
@@ -24,9 +21,9 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function Checkout() {
-  const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: '',
-  });
+  // const { isLoaded, loadError } = useLoadScript({
+  //   googleMapsApiKey: '',
+  // });
 
   const center = useMemo(() => ({ lat: 32.6324335, lng: -97.1017739 }), []);
 
@@ -100,6 +97,8 @@ function Checkout() {
           </Row>
 
         </Container><br></br>
+
+        <Navbar />
     </>
   )
 }

@@ -9,11 +9,12 @@ import PopupComponent from './card-pop.tsx';
 interface CardProps {
     type: string;
     img: string;
+    topping: string[];
     description: string;
     price: string;
 }
 
-const Card = ({ type,img,description,price }: CardProps) => {
+const Card = ({ type,img,topping,description,price }: CardProps) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -34,11 +35,10 @@ const Card = ({ type,img,description,price }: CardProps) => {
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Modal heading</Modal.Title>
                 </Modal.Header>
                 
                 <Modal.Body>
-                    <PopupComponent type={type} img={img} description={description} price={price}/>
+                    <PopupComponent type={type} img={img} topping={topping} description={description} price={price}/>
                 </Modal.Body>
                 
                 <Modal.Footer>

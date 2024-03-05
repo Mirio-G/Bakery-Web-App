@@ -38,7 +38,7 @@ function home() {
   const breads2 = ["English Muffin", "Flatbread", "Cornbread"];
 
   const [breadItems, setBreadItems] = useState([]);
-    const [drinkItems, setDrinkItems] = useState([]);
+  const [drinkItems, setDrinkItems] = useState([]);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -55,7 +55,6 @@ function home() {
 
         fetchData();
     }, []);
-
 
   return (
     
