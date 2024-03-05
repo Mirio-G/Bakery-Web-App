@@ -41,9 +41,11 @@ body {
 
 h1 {
   font-family: 'Times New Roman', Times, serif;
+
   font-size: 250%;
   line-height: 1.8;
   padding-top: 5%
+
 }
 
 h2{
@@ -72,6 +74,7 @@ h3#left{
   font-size: 35px;
   font-family: 'Times New Roman', Times, serif;
   text-align: left;
+  padding-top: 5%;
 }
 .cartImage{
   border-style: solid;
@@ -176,18 +179,20 @@ h1#ContactText{
 span#makeLeft{
   font-size: 40px;
   font-family: 'Times New Roman', Times, serif;
-  margin-top: 20px;
+  margin-top: 10px;
+  padding-bottom: 2%;
 }
 
 span#makeRight{
   font-size: 40px;
   font-family: 'Times New Roman', Times, serif;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-#makeLeft{
+span#makeLeft{
   float: inline-start;
-  padding-left: 5%;
+  padding-right: 0%;
+
 }
 
 #makeRight{
@@ -199,7 +204,7 @@ img#bar{
   width: 280px;
   height: auto;
   margin-top:15px;
-  margin-left:0px;
+  margin-left:0px;  
 }
 
 img#navlogo{
@@ -295,4 +300,7 @@ button:focus-visible {
   @media only screen and (max-width: 1080px) {
     width: 100%;
   }
+}
+.p-4{
+  padding: 0.5rem !important;
 }
