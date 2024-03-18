@@ -41,8 +41,6 @@ function home() {
   const [breadItems, setBreadItems] = useState([]);
   const [drinkItems, setDrinkItems] = useState([]);
 
-  console.log(Cart.items);
-
     useEffect(() => {
         const fetchData = async () => {
             try {
