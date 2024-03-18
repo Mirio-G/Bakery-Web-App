@@ -48,12 +48,17 @@
     font-size: 1.25em;
 }
 
+.modal-body {
+    height: 30em;
+    width: 100%;
+}
+
 .card-pop-container {
     font-family: "Times New Roman", Times, serif;
     background-color: #ffffff;
     color: hsl(0, 0%, 0%);
-    max-height: 28em;
-    max-width: 24em;
+    max-height: 40em;
+    max-width: 100%;
     border: 2px solid #000000;
     padding: 5%;
     margin: 5%;
@@ -76,8 +81,8 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
-    max-height: 70%;
-    max-width: 70%;
+    max-height: 20em;
+    max-width: 20em;
     border-width: 300%;
     border-style: solid;
     border-color: #d9d9d9;

@@ -34,21 +34,7 @@ const Card = ({ type,img,topping,description,price }: CardProps) => {
             </div>
 
             <Modal show={show} onHide={handleClose}>
-                <Modal.Header closeButton>
-                </Modal.Header>
-                
-                <Modal.Body>
-                    <PopupComponent type={type} img={img} topping={topping} description={description} price={price}/>
-                </Modal.Body>
-                
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                    <Button variant="primary" onClick={handleClose}>
-                        Save Changes
-                    </Button>
-                </Modal.Footer>
+                <PopupComponent type={type} img={img} topping={topping} description={description} price={price}/>
             </Modal>
         </div>
     );
