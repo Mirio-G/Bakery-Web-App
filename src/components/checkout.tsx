@@ -100,7 +100,9 @@ function Checkout() {
 
         <Container className = "Order">
           <Row>
-            <h1 id="placeorder">Continue to Payment</h1>
+            <a className="nav-item nav-link" href="/Payment">
+              <h1 id="placeorder" >Continue to Payment</h1>
+            </a>
           </Row>
         </Container>
 
