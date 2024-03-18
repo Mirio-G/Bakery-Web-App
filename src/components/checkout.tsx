@@ -31,7 +31,7 @@ function Checkout() {
     <>
       <Container className="cart">
           <Row className="cart2">
-            <h1 id="cartText">Cart</h1>
+            <h1 id="Cart">Cart</h1>
           </Row><br></br>
 
           <Row>
