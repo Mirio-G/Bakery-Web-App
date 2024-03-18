@@ -156,6 +156,7 @@ p#cartText{
   border-width:3px;
   width:95%;
   height:95%;
+  border-radius:10px;
 }
 .Payment2{
   border-style: solid;
@@ -175,6 +176,7 @@ h1#payText{
   border-width:3px;
   width:95%;
   height:95%;
+  border-radius:10px;
 }
 .Location2{
   border-style: solid;
@@ -193,6 +195,7 @@ h1#LocationText{
   border-width:3px;
   width:95%;
   height:95%;
+  border-radius:10px;
 }
 .Contact2{
   border-style: solid;
@@ -212,6 +215,7 @@ h1#ContactText{
   margin-bottom:27%;
   border-radius:10px;
   padding-bottom:3%;
+  margin-top:10%;
 }
 span#makeLeft{
   font-size: 40px;
