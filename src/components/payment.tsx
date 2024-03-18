@@ -4,10 +4,7 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 
  // We import all the components we need in our app
-import Navbar from "./components/navbar.tsx";
-import RecordList from "./components/recordList.tsx";
-import Edit from "./components/edit.tsx";
-import Create from "./components/create.tsx";
+import Navbar from "./navbar.tsx";
 
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
@@ -60,6 +57,8 @@ function Payment() {
             <h1 id="placeorder">Place Order</h1>
           </Row>
         </Container>
+
+        <Navbar />
     </>
   )
 }

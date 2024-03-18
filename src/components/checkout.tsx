@@ -31,7 +31,7 @@ function Checkout() {
     <>
       <Container className="cart">
           <Row className="cart2">
-            <h1 id="cartText">Cart</h1>
+            <h1 id="Cart">Cart</h1>
           </Row><br></br>
 
           <Row>
@@ -100,7 +100,9 @@ function Checkout() {
 
         <Container className = "Order">
           <Row>
-            <h1 id="placeorder">Continue to Payment</h1>
+            <a className="nav-item nav-link" href="/Payment">
+              <h1 id="placeorder" >Continue to Payment</h1>
+            </a>
           </Row>
         </Container>
 
