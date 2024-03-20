@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './Home.tsx';
 import ChatPage from "./components/chat/ChatPage.tsx";
 import Checkout from "./components/checkout.tsx";
+import Payment from "./components/payment.tsx";
 
 import './style/index.css'
 
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path="/" element={<App />}></Route>
         <Route path="/Checkout" element={<Checkout />} />
+        <Route path="/Payment" element={<Payment />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

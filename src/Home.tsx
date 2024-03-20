@@ -72,7 +72,7 @@ function home() {
             <img src="./src/assets/logo.png" alt="Logo"></img>
             </Col>
             <Col>
-              <h1 ><i>ByteSized <br/>Bakery</i></h1>
+              <h1 id='Title' ><i>ByteSized <br/>Bakery</i></h1>
             </Col>
           </Row>
         </Container>

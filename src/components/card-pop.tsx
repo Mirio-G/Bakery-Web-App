@@ -16,31 +16,16 @@ interface CardPopProps {
 
 
 const CardPop = ({ type, topping, size,img,description, price }: CardPopProps) => {
-    const [shopCart, setShopCart] = useState({item1: "test"});
     const [quantity, setQuantity] = useState(0);
-
-    // problem somewhere here
-    // 
+    
     const increment = () => {
         setQuantity(prevQuantity => prevQuantity + 1);
-        let updatedValue = {};
-        updatedValue = {item1:quantity};
-        setShopCart(shopCart => ({
-          ...shopCart,
-          ...updatedValue
-        }));
     };
 
     const decrement = () => {
         if (quantity > 0) {
           setQuantity(prevQuantity => prevQuantity - 1);
         }
-        let updatedValue = {};
-        updatedValue = {item1:quantity};
-        setShopCart(shopCart => ({
-          ...shopCart,
-          ...updatedValue
-        }));
     };
 
     const addToCart = () => {
@@ -48,20 +33,10 @@ const CardPop = ({ type, topping, size,img,description, price }: CardPopProps) =
 
         // shows whats in the cart
         console.log(Cart.items);
-        let updatedValue = {};
-        updatedValue = {item1: Cart.items};
-        setShopCart(shopCart => ({
-          ...shopCart,
-          ...updatedValue
-        }));
     }
 
     return (
         <div className="card-pop-container">
-            <Container>
-                <label>Output:</label>
-                <pre>{JSON.stringify(shopCart, null, 2)}</pre>
-            </Container>
             <hr></hr>
 
             <div className="card-pop-item">
