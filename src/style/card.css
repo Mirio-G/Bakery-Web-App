@@ -55,13 +55,12 @@
     max-height: 28em;
     max-width: 24em;
     border: 2px solid #000000;
-    padding: 2em;
-    margin: 2em;
+    padding: 5%;
+    margin: 5%;
 }
 
-
 .card-pop-img-holder{
-    background-color: #d9d9d9;
+    background-color: #ffffff;
     max-width: 95%;
     max-height: 20em;
     margin-left: 2.5%;
@@ -79,26 +78,38 @@
     display: block;
     max-height: 70%;
     max-width: 70%;
+    border-width: 300%;
+    border-style: solid;
+    border-color: #d9d9d9;
 }
 .card-pop-item{
-    padding-left: 10%;
     text-align: left;
     font-size: 1em;
 }
-.card-pop-price{
-    padding-left: 10%;
+
+h5{
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
     text-align: left;
-    font-size: 1em;
+    padding-left: 2%;
+  }
+
+.card-pop-price{
+    padding-left: 8%;
+    text-align: left;
+    font-size: 100%;
 }
 .card-pop-quantity {
     background-color: #cfcfcf;
-    padding: .2em;
-    margin: .2em;
+    padding: 2% 4%;
+    margin: 2%;
     float: left;
     line-height: normal; 
-    border-radius: 10px;
+    border-radius: 20% / 50%;
     display: flex;
     align-items: center; 
+    height: 20%;
+    width: 50%;
 }
 .card-pop-custom {
     background-color: #cfcfcf;
@@ -109,24 +120,24 @@
     vertical-align: middle;
     border-radius: 7px;
     line-height: 1;
-    padding: .2em; 
-    margin: .2em;
+    padding: 2%; 
+    margin: 2%;
     display: flex; 
     justify-content: center; 
     align-items: center; 
 }
-.button#plus{
+
+button#plus{
     background-color: #cfcfcf;
     float: right;
-    padding-right: 5%;
-    margin-left: 5%
-  }
-.button#minus{
+    padding-left: 35%;
+}
+
+button#minus{
     background-color: #cfcfcf;
     float: left;
-    padding-left: 5%;
-    margin-right: 5%;
 }
+
 .card-pop-add{
     background-color: #cfcfcf;
     height: 10%;
@@ -146,6 +157,14 @@
 }
 .card-pop-order{
     text-align: center;
+}
+
+button#add-to-cart {
+    background-color: #cfcfcf;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 20%;
+    border-radius: 50% / 0%;
 }
 
 .Google_Map {

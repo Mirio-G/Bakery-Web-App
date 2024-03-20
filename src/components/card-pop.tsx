@@ -47,9 +47,9 @@ const CardPop = ({ type, topping, size,img,description, price }: CardPopProps) =
                 <img className="card-pop-img" src={img} alt="Logo"></img>
             </div>
             <div className="card-pop-quantity">
-                <button id="makeLeft" onClick={decrement}>-</button>
-                <span>{quantity}</span>
-                <button id="makeRight" onClick={increment}>+</button>
+                <button id="minus" onClick={decrement}>-</button>
+                <span id = "makeCenter">{quantity}</span>
+                <button id="plus" onClick={increment}>+</button>
             </div>
             <Dropdown topping={topping}/>
             <div className="card-pop-descrip">Description: {description}</div>
