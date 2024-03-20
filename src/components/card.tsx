@@ -15,7 +15,7 @@ interface CardProps {
     shopCart: any[];
 }
 
-const Card = ({ type,img,topping,description,price }: CardProps) => {
+const Card = ({ data,type,img,topping,description,price }: CardProps) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -35,7 +35,7 @@ const Card = ({ type,img,topping,description,price }: CardProps) => {
             </div>
 
             <Modal show={show} onHide={handleClose}>
-                <PopupComponent type={type} img={img} topping={topping} description={description} price={price}/>
+                <PopupComponent type={type} img={img} topping={topping} description={description} price={price} data={data}/>
             </Modal>
         </div>
     );
