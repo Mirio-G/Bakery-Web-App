@@ -12,6 +12,7 @@ interface CardProps {
     topping: string[];
     description: string;
     price: string;
+    shopCart: any[];
 }
 
 const Card = ({ type,img,topping,description,price }: CardProps) => {
