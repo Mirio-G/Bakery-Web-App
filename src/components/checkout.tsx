@@ -24,7 +24,6 @@ function Checkout() {
   // const { isLoaded, loadError } = useLoadScript({
   //   googleMapsApiKey: '',
   // });
-  const [data, setData] = useState();
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -108,7 +107,11 @@ function Checkout() {
         </Container><br></br>
 
         <Container>
-          {data}
+          {items.map((item, idx) => {
+            return(
+              <p>{item.type}</p>
+            )
+          })}
         </Container>
 
         <Container className = "Order">
