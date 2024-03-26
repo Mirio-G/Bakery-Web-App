@@ -41,39 +41,23 @@ function Checkout() {
           <Row className="cart2">
             <h1 id="Cart">Cart</h1>
           </Row><br></br>
-
-          <Row>
-            <Col className="cartImage">
-          <h1 id="cartText">Image</h1>
-          </Col>
-          <Col>
-            <p className="cartText">Name</p>
-            <p className="cartText">$$$</p>
-            <p className="cartText">Quantity</p>
-          </Col>
-          </Row> <br></br>
-
-          <Row>
-            <Col className="cartImage">
-            <h1 id="cartText">Image</h1>
-            </Col>
-            <Col>
-            <p className="cartText">Name</p>
-            <p className="cartText">$$$</p>
-            <p className="cartText">Quantity</p>
-            </Col>
-          </Row> <br></br>
-
-          <Row>
-            <Col className="cartImage">
-            <h1 id="cartText">Image</h1>
-            </Col>
-            <Col>
-            <p className="cartText">Name</p>
-            <p className="cartText">$$$</p>
-            <p className="cartText">Quantity</p>
-            </Col>
-          </Row> <br></br>
+          {items.map((item, idx) => {
+            return(
+              <Container>
+                <Row>
+                  <Col className="cartImage">
+                  <img id="cartText"src = {item.img}></img>
+                  </Col>
+                  <Col>
+                  <p className="cartText">Name: {item.type}</p>
+                  <p className="cartText">${item.price}</p>
+                  <p className="cartText">{item.quantity}</p>
+                  </Col>
+                </Row> <br></br>
+              </Container>
+            )
+          })}
+          
         </Container>
 
         <Container className="Pay">
@@ -106,13 +90,7 @@ function Checkout() {
 
         </Container><br></br>
 
-        <Container>
-          {items.map((item, idx) => {
-            return(
-              <p>{item.type}</p>
-            )
-          })}
-        </Container>
+        
 
         <Container className = "Order">
           <Row>
