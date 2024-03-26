@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import App from './Home.tsx';
-import ChatPage from "./components/chat/ChatPage.tsx";
 import Checkout from "./components/checkout.tsx";
 import Payment from "./components/payment.tsx";
 

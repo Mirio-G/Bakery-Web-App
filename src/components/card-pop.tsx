@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Container from 'react-bootstrap/Container';
 
@@ -15,8 +15,9 @@ interface CardPopProps {
 }
 
 
-const CardPop = ({ type, topping, size,img,description, price }: CardPopProps) => {
+const CardPop = ({ data, type, topping, size,img,description, price }: CardPopProps) => {
     const [quantity, setQuantity] = useState(0);
+    const [cartItems, setCartItems] = useState(localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : []);
     
     const increment = () => {
         setQuantity(prevQuantity => prevQuantity + 1);
@@ -29,11 +30,28 @@ const CardPop = ({ type, topping, size,img,description, price }: CardPopProps) =
     };
 
     const addToCart = () => {
-        (quantity != 0) ? Cart.addItem(type, topping, size, quantity) : null;
+        const isItemInCart = cartItems.find((cartItem) => cartItem.type === data.type);
 
+        if (isItemInCart) {
+          setCartItems(
+            cartItems.map((cartItem) =>
+              cartItem.type === data.type
+                ? { ...cartItem, quantity: cartItem.quantity + quantity }
+                : cartItem
+            )
+          );
+        } else {
+          setCartItems([...cartItems, { ...data, quantity: quantity }]);
+        }
+
+        (quantity != 0) ? Cart.addItem(type, topping, size, quantity) : null;
         // shows whats in the cart
         console.log(Cart.items);
     }
+
+    useEffect(() => {
+        localStorage.setItem('cartItems', JSON.stringify(cartItems));
+    }, [cartItems]); // Include cartItems as a dependency here
 
     return (
         <div className="card-pop-container">

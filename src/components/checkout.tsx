@@ -1,5 +1,5 @@
 import React from "react";
-import { useMemo } from "react";
+import { useMemo, useContext } from "react";
 
 // We use Route in order to define the different routes of our application
 import { Route, Routes } from "react-router-dom";
@@ -7,7 +7,7 @@ import { Route, Routes } from "react-router-dom";
  // We import all the components we need in our app
 import Navbar from "./navbar.tsx";
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
@@ -24,8 +24,16 @@ function Checkout() {
   // const { isLoaded, loadError } = useLoadScript({
   //   googleMapsApiKey: '',
   // });
+  const [items, setItems] = useState([]);
 
-  const center = useMemo(() => ({ lat: 32.6324335, lng: -97.1017739 }), []);
+  useEffect(() => {
+    const items = JSON.parse(localStorage.getItem('cartItems'));
+    if (items) {
+     setItems(items);
+    }
+  }, []);
+
+  console.log(items);
 
   return (
     <>
@@ -35,36 +43,36 @@ function Checkout() {
           </Row><br></br>
 
           <Row>
-          <Col className="cartImage">
+            <Col className="cartImage">
           <h1 id="cartText">Image</h1>
           </Col>
           <Col>
-          <p className="cartText">Name</p>
-          <p className="cartText">$$$</p>
-          <p className="cartText">Quantity</p>
+            <p className="cartText">Name</p>
+            <p className="cartText">$$$</p>
+            <p className="cartText">Quantity</p>
           </Col>
           </Row> <br></br>
 
           <Row>
-          <Col className="cartImage">
-          <h1 id="cartText">Image</h1>
-          </Col>
-          <Col>
-          <p className="cartText">Name</p>
-          <p className="cartText">$$$</p>
-          <p className="cartText">Quantity</p>
-          </Col>
+            <Col className="cartImage">
+            <h1 id="cartText">Image</h1>
+            </Col>
+            <Col>
+            <p className="cartText">Name</p>
+            <p className="cartText">$$$</p>
+            <p className="cartText">Quantity</p>
+            </Col>
           </Row> <br></br>
 
           <Row>
-          <Col className="cartImage">
-          <h1 id="cartText">Image</h1>
-          </Col>
-          <Col>
-          <p className="cartText">Name</p>
-          <p className="cartText">$$$</p>
-          <p className="cartText">Quantity</p>
-          </Col>
+            <Col className="cartImage">
+            <h1 id="cartText">Image</h1>
+            </Col>
+            <Col>
+            <p className="cartText">Name</p>
+            <p className="cartText">$$$</p>
+            <p className="cartText">Quantity</p>
+            </Col>
           </Row> <br></br>
         </Container>
 
@@ -98,6 +106,14 @@ function Checkout() {
 
         </Container><br></br>
 
+        <Container>
+          {items.map((item, idx) => {
+            return(
+              <p>{item.type}</p>
+            )
+          })}
+        </Container>
+
         <Container className = "Order">
           <Row>
             <a className="nav-item nav-link" href="/Payment">
@@ -106,6 +122,8 @@ function Checkout() {
           </Row>
         </Container>
 
+
+        
         <Navbar />
     </>
   )
