@@ -15,7 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
         <Route path="/" element={<App />}></Route>
         <Route path="/Checkout" element={<Checkout />} />
         <Route path="/Payment" element={<Payment />} />
-        <Route path='/Menu' element {<Menu/>}/>
+        <Route path='/Menu' element= {<Menu />}/>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
