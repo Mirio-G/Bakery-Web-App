@@ -114,6 +114,8 @@ h3#left{
   padding-left:15px;
   padding-top: 10%;
   margin-bottom:10%;
+  line-height: 150%;
+  font-size: 1.2em;
 }
 .cart{
   border-style: solid;

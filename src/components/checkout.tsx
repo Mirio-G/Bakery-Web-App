@@ -49,7 +49,7 @@ function Checkout() {
                   <img id="cartText"src = {item.img}></img>
                   </Col>
                   <Col>
-                  <p className="cartText">Name: {item.type}</p>
+                  <p className="cartText">{item.type}</p>
                   <p className="cartText">${item.price}</p>
                   <p className="cartText">{item.quantity}</p>
                   </Col>
