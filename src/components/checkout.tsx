@@ -46,7 +46,7 @@ function Checkout() {
               <Container>
                 <Row>
                   <Col className="cartImage">
-                  <img id="cartText"src = {item.img}></img>
+                  <img id="cartText" className="card-img" src = {item.img}></img>
                   </Col>
                   <Col>
                   <p className="cartText">{item.type}</p>

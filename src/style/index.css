@@ -101,13 +101,13 @@ h3#left{
 
 .cartImage{
   border-style: solid;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 10%;
-  margin-top: 5%;
-  border-spacing: 10px;
-  padding-top:20px;
-  border-radius:10px;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  border-spacing: 5px;
+  padding-top: 10px;
+  border-radius: 5px;
 }
 .cartText{
   text-align: left;
