@@ -58,14 +58,19 @@ h1#placeorder{
 }
 
 h1#Subtotal{
+  font-size:  100%;
   padding-bottom:5%;
   padding-top: 13%;
 }
+
 h1#Total{
+  font-size: 125%;
   padding-bottom:10%;
   padding-top: 10%;
 }
+
 h1#salestax{
+  font-size: 100%;
   padding-bottom:5%;
   padding-top: 10%;
 }
