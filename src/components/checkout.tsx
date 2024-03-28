@@ -34,6 +34,18 @@ function Checkout() {
   }, []);
 
   console.log(items);
+  var subTotal = 0;
+
+  {items.map((item, idx) => {
+    return(
+      <div key = {idx}> 
+      {subTotal += item.price * item.quantity}
+      </div>
+    )
+  })}
+   var salesTax = Math.round((subTotal * .0825)*100)/100;
+   var Total = subTotal + salesTax;
+
 
   return (
     <>
@@ -66,7 +78,9 @@ function Checkout() {
             <h1 id="Subtotal"><b>Subtotal</b></h1>
           </Col>
           <Col>
-          <h1 id="Subtotal">$$$</h1>
+          <h1 id="Subtotal">
+          {subTotal}
+          </h1>
           </Col>
           </Row>
 
@@ -75,7 +89,7 @@ function Checkout() {
           <h1 id="salestax">Sales Tax</h1>
           </Col>
           <Col>
-          <h1 id="salestax">$$$</h1>
+          <h1 id="salestax">{salesTax}</h1>
           </Col>
           </Row>
 
@@ -84,7 +98,7 @@ function Checkout() {
           <h1 id="Total"><b>Total</b></h1>
           </Col>
           <Col>
-          <h1 id="Total"><b>$$$</b></h1>
+          <h1 id="Total"><b>{Total}</b></h1>
           </Col>
           </Row>
 
@@ -99,8 +113,6 @@ function Checkout() {
             </a>
           </Row>
         </Container>
-
-
         
         <Navbar />
     </>

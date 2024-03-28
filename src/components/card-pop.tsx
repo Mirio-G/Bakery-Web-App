@@ -11,7 +11,7 @@ interface CardPopProps {
     size: string;
     img: string;
     description: string;
-    price: string;
+    price: number;
 }
 
 
@@ -44,7 +44,7 @@ const CardPop = ({ data, type, topping, size,img,description, price }: CardPopPr
           setCartItems([...cartItems, { ...data, quantity: quantity }]);
         }
 
-        (quantity != 0) ? Cart.addItem(type, topping, size, quantity) : null;
+        (quantity != 0) ? Cart.addItem(type, topping, size, quantity, price) : null;
         // shows whats in the cart
         console.log(Cart.items);
     }
