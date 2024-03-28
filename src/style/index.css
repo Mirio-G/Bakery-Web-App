@@ -334,3 +334,6 @@ button:focus-visible {
 .p-4{
   padding: 0.5rem !important;
 }
+.menu_container{
+  margin-bottom: 15%;
+}

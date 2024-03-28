@@ -7,13 +7,37 @@ import { Route, Routes } from "react-router-dom";
 // styling
 import '../style/App.css'
 import '../style/card.css'
+import '../style/index.css'
+
+import Navbar from "./navbar";
+import Card from '../components/card.tsx'
 
 // bootstrap
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+import Row, { RowProps } from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 function Menu(){
-
+    return(
+        <>
+    <Navbar/>
+    <Container class = "menu_container">
+        <Row>
+            <Col>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+            </Col>
+            <Col>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+            </Col>
+        </Row>
+    </Container>
+    </>
+    )
 }
 export default Menu
