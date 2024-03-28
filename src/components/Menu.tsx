@@ -21,7 +21,7 @@ function Menu(){
     return(
         <>
     <Navbar/>
-    <Container class = "menu_container">
+    <Container className = "menu_container">
         <Row>
             <Col>
                 <Card/>
