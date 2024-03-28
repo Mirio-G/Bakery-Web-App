@@ -33,7 +33,19 @@ function Checkout() {
     }
   }, []);
 
-  console.log(items);
+  const handleRemoveItem = (e) => {
+    const temp = [...items]
+    const idx = e.target.getAttribute("index");
+
+    if (idx !== -1) {
+      temp.splice(idx,1);
+    }
+
+    setItems(temp.length < 1 ? [] : temp);
+    
+    localStorage.clear();
+    localStorage.setItem('cartItems', JSON.stringify(temp));
+  };
 
   return (
     <>
@@ -43,7 +55,7 @@ function Checkout() {
           </Row><br></br>
           {items.map((item, idx) => {
             return(
-              <Container>
+              <Container key={item.type}>
                 <Row>
                   <Col className="cartImage">
                   <img id="cartText" className="card-img" src = {item.img}></img>
@@ -52,6 +64,7 @@ function Checkout() {
                   <p className="cartText">{item.type}</p>
                   <p className="cartText">${item.price}</p>
                   <p className="cartText">{item.quantity}</p>
+                  <button name={item.type} index={idx} onClick={handleRemoveItem}>REMOVE ITEM</button> 
                   </Col>
                 </Row> <br></br>
               </Container>
@@ -89,8 +102,6 @@ function Checkout() {
           </Row>
 
         </Container><br></br>
-
-        
 
         <Container className = "Order">
           <Row>
