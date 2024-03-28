@@ -34,6 +34,31 @@ function Checkout() {
   }, []);
 
   console.log(items);
+  var subTotal = 0;
+
+  {items.map((item, idx) => {
+    return(
+      <div key = {idx}> 
+      {subTotal += item.price * item.quantity}
+      </div>
+    )
+  })}
+   var salesTax = Math.round((subTotal * .0825)*100)/100;
+   var Total = subTotal + salesTax;
+
+  const handleRemoveItem = (e) => {
+    const temp = [...items]
+    const idx = e.target.getAttribute("index");
+
+    if (idx !== -1) {
+      temp.splice(idx,1);
+    }
+
+    setItems(temp.length < 1 ? [] : temp);
+    
+    localStorage.clear();
+    localStorage.setItem('cartItems', JSON.stringify(temp));
+  };
 
   return (
     <>
@@ -43,7 +68,7 @@ function Checkout() {
           </Row><br></br>
           {items.map((item, idx) => {
             return(
-              <Container>
+              <Container key={item.type}>
                 <Row>
                   <Col className="cartImage">
                   <img id="cartText" className="card-img" src = {item.img}></img>
@@ -52,6 +77,7 @@ function Checkout() {
                   <p className="cartText">{item.type}</p>
                   <p className="cartText">${item.price}</p>
                   <p className="cartText">{item.quantity}</p>
+                  <button name={item.type} index={idx} onClick={handleRemoveItem}>REMOVE ITEM</button> 
                   </Col>
                 </Row> <br></br>
               </Container>
@@ -66,7 +92,9 @@ function Checkout() {
             <h1 id="Subtotal"><b>Subtotal</b></h1>
           </Col>
           <Col>
-          <h1 id="Subtotal">$$$</h1>
+          <h1 id="Subtotal">
+          {subTotal}
+          </h1>
           </Col>
           </Row>
 
@@ -75,7 +103,7 @@ function Checkout() {
           <h1 id="salestax">Sales Tax</h1>
           </Col>
           <Col>
-          <h1 id="salestax">$$$</h1>
+          <h1 id="salestax">{salesTax}</h1>
           </Col>
           </Row>
 
@@ -84,13 +112,11 @@ function Checkout() {
           <h1 id="Total"><b>Total</b></h1>
           </Col>
           <Col>
-          <h1 id="Total"><b>$$$</b></h1>
+          <h1 id="Total"><b>{Total}</b></h1>
           </Col>
           </Row>
 
         </Container><br></br>
-
-        
 
         <Container className = "Order">
           <Row>
@@ -99,8 +125,6 @@ function Checkout() {
             </a>
           </Row>
         </Container>
-
-
         
         <Navbar />
     </>
