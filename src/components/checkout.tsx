@@ -63,7 +63,7 @@ function Checkout() {
         <Container className="Pay">
           <Row>
           <Col className = "subtotal">
-            <h1 id="Subtotal">Subtotal</h1>
+            <h1 id="Subtotal"><b>Subtotal</b></h1>
           </Col>
           <Col>
           <h1 id="Subtotal">$$$</h1>
@@ -81,10 +81,10 @@ function Checkout() {
 
           <Row>
           <Col className = "total">
-          <h1 id="Total">Total</h1>
+          <h1 id="Total"><b>Total</b></h1>
           </Col>
           <Col>
-          <h1 id="Total">$$$</h1>
+          <h1 id="Total"><b>$$$</b></h1>
           </Col>
           </Row>
 
