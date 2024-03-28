@@ -81,6 +81,13 @@ h2{
   margin-top:20px;  
 }
 
+.nav-item.active.nav-link,
+.nav-item.nav-link:active,
+.nav-item.nav-link:focus,
+.nav-item:hover.nav-link{
+    color: #CB8B2E;
+}
+
 h2#makeLeft{
   font-size: 25px;
   font-family: 'Times New Roman', Times, serif;
