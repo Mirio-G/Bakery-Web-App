@@ -34,6 +34,18 @@ function Checkout() {
   }, []);
 
   console.log(items);
+  {items.map((item, idx) => {
+    console.log("key: ", idx, "value: ", item);
+  })}
+  
+  const remove = (idx: number) => {
+    //var updatedItems = items.slice();
+    delete items[idx];
+    setItems(items);
+    // useEffect(() => {
+    //   localStorage.setItem('cartItems', JSON.stringify(items))
+    // }, [items]);
+  }
 
   return (
     <>
@@ -52,6 +64,7 @@ function Checkout() {
                   <p className="cartText">{item.type}</p>
                   <p className="cartText">${item.price}</p>
                   <p className="cartText">{item.quantity}</p>
+                  <button onClick={remove(idx)}>Remove Item</button>
                   </Col>
                 </Row> <br></br>
               </Container>

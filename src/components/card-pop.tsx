@@ -12,6 +12,7 @@ interface CardPopProps {
     img: string;
     description: string;
     price: string;
+    data: any;
 }
 
 
