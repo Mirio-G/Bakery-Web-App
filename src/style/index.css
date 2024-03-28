@@ -1,9 +1,5 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
-@font-face {
-  font-family: timesnewroman;
-  src: url(../../fonts/Times-New-Roman/Times\ New\ Roman/)
-}
 
 @font-face{
   font-family: nickainley;
