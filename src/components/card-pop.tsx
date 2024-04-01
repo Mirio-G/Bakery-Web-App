@@ -11,8 +11,7 @@ interface CardPopProps {
     size: string;
     img: string;
     description: string;
-    price: string;
-    data: any;
+    price: number;
 }
 
 
@@ -31,23 +30,26 @@ const CardPop = ({ data, type, topping, size,img,description, price }: CardPopPr
     };
 
     const addToCart = () => {
-        const isItemInCart = cartItems.find((cartItem) => cartItem.type === data.type);
+        if(quantity > 0){
+            const isItemInCart = cartItems.find((cartItem) => cartItem.type === data.type);
 
-        if (isItemInCart) {
-          setCartItems(
-            cartItems.map((cartItem) =>
-              cartItem.type === data.type
-                ? { ...cartItem, quantity: cartItem.quantity + quantity }
-                : cartItem
-            )
-          );
-        } else {
-          setCartItems([...cartItems, { ...data, quantity: quantity }]);
+            if (isItemInCart) {
+              setCartItems(
+                cartItems.map((cartItem) =>
+                  cartItem.type === data.type
+                    ? { ...cartItem, quantity: cartItem.quantity + quantity }
+                    : cartItem
+                )
+              );
+              alert('Item(s) added to cart!');
+            } else {
+              setCartItems([...cartItems, { ...data, quantity: quantity }]);
+              alert('Item(s) added to cart!');
+            }
+
+            (quantity != 0) ? Cart.addItem(type, topping, size, quantity) : null;
+            
         }
-
-        (quantity != 0) ? Cart.addItem(type, topping, size, quantity) : null;
-        // shows whats in the cart
-        console.log(Cart.items);
     }
 
     useEffect(() => {
