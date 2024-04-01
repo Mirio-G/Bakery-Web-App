@@ -33,7 +33,6 @@ function Checkout() {
     }
   }, []);
 
-  console.log(items);
   var subTotal = 0;
 
   {items.map((item, idx) => {
@@ -53,11 +52,29 @@ function Checkout() {
     if (idx !== -1) {
       temp.splice(idx,1);
     }
+    console.log(idx);
 
     setItems(temp.length < 1 ? [] : temp);
     
     localStorage.clear();
     localStorage.setItem('cartItems', JSON.stringify(temp));
+  };
+
+  const increment = (e) => {
+    const temp = [...items]
+    const idx = e.target.getAttribute("index");
+
+    console.log(temp);
+    temp[idx].quantity++;
+
+    setItems(temp.length < 1 ? [] : temp);
+    
+    localStorage.clear();
+    localStorage.setItem('cartItems', JSON.stringify(temp));
+  };
+
+  const decrement = (e) => {
+
   };
 
   return (
@@ -76,7 +93,11 @@ function Checkout() {
                   <Col>
                   <p className="cartText">{item.type}</p>
                   <p className="cartText">${item.price}</p>
-                  <p className="cartText">{item.quantity}</p>
+                  <div className="checkout-quantity">
+                    <button id="minus" index={idx} onClick={decrement}>-</button>
+                    <span id = "makeCenter">{item.quantity}</span>
+                    <button id="plus" index={idx} onClick={increment}>+</button>
+                  </div>
                   <button name={item.type} index={idx} onClick={handleRemoveItem}>REMOVE ITEM</button> 
                   </Col>
                 </Row> <br></br>
