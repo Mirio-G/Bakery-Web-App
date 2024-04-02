@@ -64,7 +64,6 @@ function Checkout() {
     const temp = [...items]
     const idx = e.target.getAttribute("index");
 
-    console.log(temp);
     temp[idx].quantity++;
 
     setItems(temp.length < 1 ? [] : temp);
@@ -74,7 +73,16 @@ function Checkout() {
   };
 
   const decrement = (e) => {
+    const temp = [...items]
+    const idx = e.target.getAttribute("index");
 
+    if (temp[idx].quantity > 1) {
+      temp[idx].quantity--;
+      setItems(temp.length < 1 ? [] : temp);
+      
+      localStorage.clear();
+      localStorage.setItem('cartItems', JSON.stringify(temp));
+    }
   };
 
   return (
