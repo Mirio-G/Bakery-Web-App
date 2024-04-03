@@ -37,7 +37,7 @@ const CardPop = ({ data, type, topping, size,img,description, price }: CardPopPr
               setCartItems(
                 cartItems.map((cartItem) =>
                   cartItem.type === data.type
-                    ? { ...cartItem, quantity: cartItem.quantity + quantity }
+                    ? { ...cartItem, quantity: quantity }
                     : cartItem
                 )
               );
@@ -46,9 +46,6 @@ const CardPop = ({ data, type, topping, size,img,description, price }: CardPopPr
               setCartItems([...cartItems, { ...data, quantity: quantity }]);
               alert('Item(s) added to cart!');
             }
-
-            (quantity != 0) ? Cart.addItem(type, topping, size, quantity) : null;
-            
         }
     }
 

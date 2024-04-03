@@ -172,6 +172,18 @@ h1#cartText{
 p#cartText{
   font-size:50px;
 }
+.checkout-quantity{
+  padding: 2% 4%;
+  margin: 2%;
+  float: left;
+  line-height: normal; 
+  border-radius: 20% / 50%;
+  display: flex;
+  align-items: center; 
+  height: 20%;
+  width: 50%;
+}
+
 .Pay{
   border-style:solid;
   border-color:#301603;
@@ -259,6 +271,7 @@ span#makeLeft{
 
 span#makeCenter{
   padding-left: 30%;
+  padding-right: 30%
 }
 
 span#makeRight{
