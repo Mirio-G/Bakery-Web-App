@@ -61,12 +61,17 @@ h1#Title {
 h1#placeorder{
   padding-top: 5%;
   padding-bottom: 1%;
+  font-size:150%;
+  color: white;
+  font-family:Arial;
+  font-weight:bold;
 }
 
 h1#Subtotal{
   font-size:  100%;
   padding-bottom:5%;
   padding-top: 13%;
+  font-weight:bold;
 }
 
 h1#Total{
@@ -79,12 +84,20 @@ h1#salestax{
   font-size: 100%;
   padding-bottom:5%;
   padding-top: 10%;
+  font-weight:bold;
 }
 
 h2{
   font-family: 'Times New Roman', Times, serif;
   font-size: 25px;
   margin-top:20px;  
+}
+
+.nav-item.active.nav-link,
+.nav-item.nav-link:active,
+.nav-item.nav-link:focus,
+.nav-item:hover.nav-link{
+    color: #CB8B2E;
 }
 
 h2#makeLeft{
@@ -111,7 +124,7 @@ h3#left{
 }
 
 .cartImage{
-  border-style: solid;
+  /* border-style: solid; */
   margin-left: 2%;
   margin-right: 2%;
   margin-bottom: 2%;
@@ -127,9 +140,11 @@ h3#left{
   margin-bottom:10%;
   line-height: 150%;
   font-size: 1em;
+  font-weight:bold;
 }
 .cart{
   border-style: solid;
+  border-color:#301603;
   border-width:3px;
   width:95%;
   height:95%;
@@ -138,14 +153,16 @@ h3#left{
 }
 .cart2{
   border-style: solid;
+  border-color:#301603;
   border-top: 0px;
   border-left: 0px;
   border-right: 0px;
   border-width:3px;
 }
 h1#Cart{
-  font-size: 50px;
+  font-size: 500%;
   padding-top:5%;
+  font-family:nickainley;
 }
 h1#cartText{
   font-size: 50px;
@@ -169,6 +186,7 @@ p#cartText{
 
 .Pay{
   border-style:solid;
+  border-color:#301603;
   border-width:3px;
   width:95%;
   height:95%;
@@ -234,13 +252,15 @@ h1#ContactText{
   font-size: 250%;
 }
 .Order{
-  background-color:#969696;
+  background-color:#6e4a1d;
   width:95%;
   height:95%;
   margin-bottom:27%;
   border-radius:10px;
   padding-bottom:3%;
-  margin-top:10%;
+  border-style:solid;
+  border-color:#301603;
+
 }
 span#makeLeft{
   font-size: 37px;
@@ -283,7 +303,11 @@ img#navlogo{
   margin-top: 0px;
   align-items: center;
 }
-
+button#remove{
+  border-color:#301603;
+  border-width:2px;
+  background-color:#644117;
+}
 img{
   width: 90%;
   height: auto;

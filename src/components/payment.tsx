@@ -50,7 +50,7 @@ function Payment() {
           <h1 id="contact">Filler Text</h1>
           </Col>
           </Row>
-        </Container>
+        </Container><br></br>
 
         <Container className = "Order">
           <Row>

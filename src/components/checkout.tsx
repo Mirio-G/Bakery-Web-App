@@ -121,9 +121,7 @@ function Checkout() {
             <h1 id="Subtotal"><b>Subtotal</b></h1>
           </Col>
           <Col>
-          <h1 id="Subtotal">
-          {subTotal}
-          </h1>
+          <h1 id="Subtotal">${subTotal}</h1>
           </Col>
           </Row>
 
@@ -132,7 +130,7 @@ function Checkout() {
           <h1 id="salestax">Sales Tax</h1>
           </Col>
           <Col>
-          <h1 id="salestax">{salesTax}</h1>
+          <h1 id="salestax">${salesTax}</h1>
           </Col>
           </Row>
 
@@ -141,16 +139,16 @@ function Checkout() {
           <h1 id="Total"><b>Total</b></h1>
           </Col>
           <Col>
-          <h1 id="Total"><b>{Total}</b></h1>
+          <h1 id="Total"><b>${Total}</b></h1>
           </Col>
           </Row>
 
         </Container><br></br>
 
         <Container className = "Order">
-          <Row>
+          <Row >
             <a className="nav-item nav-link" href="/Payment">
-              <h1 id="placeorder" >Continue to Payment</h1>
+              <h1 id="placeorder" className = "placeorder">CONTINUE TO PAYMENT</h1>
             </a>
           </Row>
         </Container>
